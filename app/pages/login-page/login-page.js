@@ -77,7 +77,7 @@ class LoginPage extends BbvaCoreIntlMixin(CellsPage) {
       this._setToast('success', 'Inicio de session correcto');
       const _tsec = this.shadowRoot.querySelector('#taining-dm');
 
-    
+      console.log(_tsec.user)
       this.publish('user_name', _tsec.user);
       this.navigate('dashboard');
     } else {

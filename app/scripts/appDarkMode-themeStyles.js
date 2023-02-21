@@ -4,6 +4,7 @@ import { bbvaFormPasswordDarkModeThemeStyles } from '@bbva-web-components/bbva-f
 import { bbvaFormToggleDarkModeThemeStyles } from '@bbva-web-components/bbva-form-toggle/index.js';
 import { bbvaHeaderMainDarkModeThemeStyles } from '@bbva-web-components/bbva-header-main/index.js';
 import { bbvaHelpModalDarkModeThemeStyles } from '@bbva-web-components/bbva-help-modal/index.js';
+import { bbvaListCardDarkModeThemeStyles } from '@bbva-web-components/bbva-list-card/index.js';
 import { bbvaListInfoDarkModeThemeStyles } from '@bbva-web-components/bbva-list-info/index.js';
 import { bbvaListMovementDarkModeThemeStyles } from '@bbva-web-components/bbva-list-movement/index.js';
 import { bbvaListSimpleDarkModeThemeStyles } from '@bbva-web-components/bbva-list-simple/index.js';
@@ -17,6 +18,7 @@ export default {
   ...bbvaFormToggleDarkModeThemeStyles,
   ...bbvaHeaderMainDarkModeThemeStyles,
   ...bbvaHelpModalDarkModeThemeStyles,
+  ...bbvaListCardDarkModeThemeStyles,
   ...bbvaListInfoDarkModeThemeStyles,
   ...bbvaListMovementDarkModeThemeStyles,
   ...bbvaListSimpleDarkModeThemeStyles,

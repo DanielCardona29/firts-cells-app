@@ -1,132 +1,191 @@
-import { CellsPage } from '@cells/cells-page';
+;import { CellsPage } from '@cells/cells-page';
 import { BbvaCoreIntlMixin } from '@bbva-web-components/bbva-core-intl-mixin';
-import { html, css } from 'lit-element';
-import { spread } from '@open-wc/lit-helpers';
+import { html } from 'lit-element';
 
 import '@cells-components/cells-template-paper-drawer-panel';
 import '@cells-components/cells-skeleton-loading-page';
-import '@bbva-web-components/bbva-header-main';
-import '@bbva-web-components/bbva-list-movement/bbva-list-movement.js';
 import '@bbva-web-components/bbva-help-modal/bbva-help-modal.js';
-
-import { getMovements } from '../../scripts/utils/movements-mock.js';
-import { normalizeUriString } from '../../scripts/utils/text.js';
+import '@bbva-web-components/bbva-list-card/bbva-list-card';
+import '@bbva-web-components-widgets/cards-list-cards/cards-list-cards';
+import '@training/cells-training-card-dm/cells-training-card-dm.js';
 
 import styles from './dashboard-page-styles.js';
 
 /* eslint-disable new-cap */
 class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
-  static get is() {
-    return 'dashboard-page';
-  }
-
-  constructor() {
-    super();
-
-    this.movements = [];
-  }
 
   static get properties() {
     return {
       userName: { type: String },
-      movements: { type: Array },
+      isLoading: { type: Boolean },
+      cardsList: { type: Object }
     };
   }
+
+  constructor() {
+    ;
+    super();
+    this.isLoading = false;
+    this.cardsList = {
+      data: []
+    };
+  }
+
 
   firstUpdated(changedProps) {
     super.firstUpdated(changedProps);
 
     this._logoutModal = this.shadowRoot.querySelector('#logoutModal');
+    this._getCardsList();
   }
 
   onPageEnter() {
-    this.subscribe('user_name', (userName) => this.userName = userName);
+    this.subscribe('user_name', (user) => {
+      this.userName = user
+      window.sessionStorage.setItem('user_name', this.userName);
+    });
 
-    if (!this.movements.length) {
-      getMovements().then((movements) => {
-        this.movements = movements;
-      });
+    if (!this.userName) {
+      this.userName = window.sessionStorage.getItem('user_name');
     }
   }
 
-  onPageLeave() {
-
+  _getCardsList() {
+    const dataManager = this.shadowRoot.querySelector('cells-training-card-dm');
+    // cards.host = 'https://artichoke.platform.bbva.com';
+    // cards.version = '0';
+    this.isLoading = true;
+    dataManager && dataManager.getCards();
   }
 
-  handleMovementClick({ id, label }) {
-    this.publish('movement_title', label);
-    this.navigate('movement-detail', { id, label: normalizeUriString(label), });
-  }
+  cardRequestResponse(event) {
+    const { detail: response } = event;
 
-  get movementList() {
-    if (!this.movements.length) {
-      return null;
+    if (response.statusText === 'OK') {
+      const queryResponse = JSON.parse(response.response);
+      queryResponse.data = queryResponse.data.map((card) => {
+
+        console.log(card)
+        let status = '';
+        switch (card.status.id.toLowerCase()) {
+          case 'bloked':
+            status = 'bloked'
+            break;
+            case 'off':
+              status = 'off'
+            break;
+          default:
+            status = ''
+            break;
+        }
+
+        
+
+        return {
+          brand: card.brandAssociation.name,
+          cardId: card.cardId,
+          cardNumber: card.number,
+          currentBalance: card.availableBalance.currentBalances[0],
+          name: card.alias,
+          padingBalance: card.availableBalance.pendingBalances[0],
+          status
+        }
+      })
+      
+      this.cardsList =queryResponse; 
+    } else {
+      this.cardsList = {
+        data: [],
+        apiInfo: {},
+        error: true
+      }
     }
 
-    return this.movements.map((movement) => {
-      const movementProperties = this.buildMovementProperties(movement);
+    this.isLoading = false;
+  }
 
-      return html`
-        <bbva-list-movement
-          ...="${spread(movementProperties)}">
-        </bbva-list-movement>
-      `;
+  cardListMap() {
+    const { data }=this.cardsList;
+
+    const imagesList = [{id:'VISA', link: '/images/visa.png'}]
+
+
+    return data.map((card) => {
+      const formatter = new Intl.NumberFormat(window.IntlMsg.lang, {
+        style: 'currency',
+        currency: card.currentBalance.currency,
+        minimumFractionDigits: 2
+      })
+
+
+        return html`
+        <bbva-list-card
+          variant="card"
+          show-card
+          card-status=${card.status}
+          card-title=${card.name}
+          num-product=${card.cardNumber}
+          amount=${card.padingBalance.amount}
+          currency-code=${card.padingBalance.currency}
+          content-text=${this.t('currencies-balance.peding.description')}
+          credit-balance=${formatter.format(card.currentBalance.amount)}
+          secondary-currency-code=${card.currentBalance.currency}
+          content-text-extra=${this.t('currencies-balance.avalible.description')}
+          card-image=${imagesList.find(item => item.id === card.brand).link}
+          >
+          </bbva-list-card>
+        `
     });
   }
 
-  buildMovementProperties(movement) {
-    const { description, label, parsedAmount, parsedAcountingBalance, categoryDescription, badge, icon, product } = movement;
-
-    return {
-      ...(description && { 'description': description }),
-      ...(label && { 'card-title': label }),
-      ...(parsedAmount && { 'amount': parsedAmount.value, 'local-currency': parsedAmount.currency, 'currency-code': parsedAmount.currency }),
-      ...(parsedAcountingBalance && { 'secondary-amount': parsedAcountingBalance.value }),
-      ...(categoryDescription && { 'concept': categoryDescription }),
-      ...(badge && { 'badge-text': badge.label, 'badge-text-type': badge.status }),
-      ...(icon && { icon }),
-      ...(product && { mask: product }),
-      '@click': () => this.handleMovementClick(movement),
-      'class': 'bbva-global-semidivider',
-      'aria-label': 'Ver detalle del pago con tarjeta',
-      'language': 'es',
-    };
-  }
-
   render() {
+
+    // console.log(this.userName)
     return html`
-      <cells-template-paper-drawer-panel mode="seamed">
-        <div slot="app__header">
-          <bbva-header-main
-            icon-left-primary="coronita:on"
-            accessibility-text-icon-left-primary="Cerrar Sesión"
-            @header-main-icon-left-primary-click=${() => this._logoutModal.open()}
-            icon-right-primary="coronita:help"
-            accessibility-text-icon-right-primary="Ayuda"
-            @header-main-icon-right-primary-click=${() => this.navigate('help')}
-            text=${this.t('dashboard-page.header', '', { name: this.userName })}>
-          </bbva-header-main>
-        </div>
 
-        <div slot="app__main" class="container">
-          ${this.movementList ? html`${this.movementList}` : html`<cells-skeleton-loading-page visible></cells-skeleton-loading-page>`}
-
-          <bbva-help-modal
-            id="logoutModal"
-            header-icon="coronita:info"
-            header-text=${this.t('dashboard-page.logout-modal.header')}
-            button-text=${this.t('dashboard-page.logout-modal.button')}
-            @help-modal-footer-button-click=${() => window.cells.logout()}>
-            <div slot="slot-content">
-              <span>${this.t('dashboard-page.logout-modal.slot')}</span>
-            </div>
-          </bbva-help-modal>
-        </div>
-     </cells-template-paper-drawer-panel>`;
+    <cells-training-card-dm id="dm-cards" @request-cards-success=${this.cardRequestResponse}></cells-training-card-dm>
+    
+    
+    
+    <cells-template-paper-drawer-panel mode="seamed">
+      <div slot="app__header">
+        <bbva-header-main icon-left-primary="coronita:on" accessibility-text-icon-left-primary="Cerrar Sesión"
+          @header-main-icon-left-primary-click=${()=> this._logoutModal.open()}
+          icon-right-primary="coronita:help"
+          accessibility-text-icon-right-primary="Ayuda"
+          @header-main-icon-right-primary-click=${() => this.navigate('help')}
+          text=${this.t('dashboard-page.header', '', { name: this.userName })}>
+        </bbva-header-main>
+      </div>
+    
+    
+    
+      <div slot="app__main" class="container">
+        ${this.isLoading 
+        ? html`<cells-skeleton-loading-page visible></cells-skeleton-loading-page>`
+        : this.cardListMap()
+        }    
+    
+  
+        <bbva-help-modal id="logoutModal" header-icon="coronita:info"
+          header-text=${this.t('dashboard-page.logout-modal.header')}
+          button-text=${this.t('dashboard-page.logout-modal.button')} @help-modal-footer-button-click=${()=>
+        window.cells.logout()}>
+          <div slot="slot-content">
+            <span>${this.t('dashboard-page.logout-modal.slot')}</span>
+          </div>
+        </bbva-help-modal>
+    
+      </div>
+    </cells-template-paper-drawer-panel>`;
   }
 
   static get styles() {
-    return [ styles ];
+    return [styles];
+  }
+
+  static get is() {
+    return 'dashboard-page';
   }
 }
 

@@ -5,6 +5,7 @@
     "cells-app"
   ],
   "dependencies": {
+    "@bbva-web-components-widgets/cards-list-cards": "^1.9.0",
     "@bbva-web-components/bbva-button-default": "^5.0.0",
     "@bbva-web-components/bbva-core-intl-mixin": "^1.0.0",
     "@bbva-web-components/bbva-core-lit-helpers": "^1.0.0",
@@ -15,6 +16,7 @@
     "@bbva-web-components/bbva-foundations-theme": "^2.0.0",
     "@bbva-web-components/bbva-header-main": "^7.0.0",
     "@bbva-web-components/bbva-help-modal": "^4.0.0",
+    "@bbva-web-components/bbva-list-card": "^7.18.9",
     "@bbva-web-components/bbva-list-info": "^3.0.0",
     "@bbva-web-components/bbva-list-movement": "^5.0.0",
     "@bbva-web-components/bbva-list-simple": "^7.0.0",
@@ -28,6 +30,7 @@
     "@cells/cells-element": "^1.5.0",
     "@cells/cells-page": "^1.5.0",
     "@open-wc/lit-helpers": "^0.3.0",
+    "@training/cells-training-card-dm": "git+https://github.com/DanielCardona29/cells-training-card-dm.git#master",
     "@webcomponents/webcomponentsjs": "^2.5.0",
     "cells-app-template": "^6.0.0"
   },

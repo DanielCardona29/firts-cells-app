@@ -3,7 +3,7 @@
     "login-page.button": "Iniciar sesion",
     "login-page.user-input": "Usuario",
     "login-page.password-input": "Contraseña",
-    "dashboard-page.header": "Bienvenido, scaffoldLit",
+    "dashboard-page.header": "Bienvenido, ",
     "dashboard-page.logout-modal.header": "Cerrar sesión",
     "dashboard-page.logout-modal.button": "Continuar",
     "dashboard-page.logout-modal.slot": "¿Quieres cerrar sesión?",
@@ -13,13 +13,16 @@
     "movement-detail.category": "Categoría",
     "movement-detail.amount": "Importe",
     "movement-detail.currentBalance": "Saldo Actual",
-    "movement-detail.badges": "Etiquetas"
+    "movement-detail.badges": "Etiquetas",
+    "currencies-balance.peding.description": "Saldo Pendiente",
+    "currencies-balance.avalible.description": "Saldo disponible"
+
   },
   "en-US": {
     "login-page.button": "Sign in",
     "login-page.user-input": "User",
     "login-page.password-input": "Password",
-    "dashboard-page.header": "Wellcome, scaffoldLit",
+    "dashboard-page.header": "Wellcome, ",
     "dashboard-page.logout-modal.header": "Sign out",
     "dashboard-page.logout-modal.button": "Continue",
     "dashboard-page.logout-modal.slot": "Do you want to close your session?",
@@ -29,6 +32,9 @@
     "movement-detail.category": "Category",
     "movement-detail.amount": "Amount",
     "movement-detail.currentBalance": "Current Balance",
-    "movement-detail.badges": "Badges"
+    "movement-detail.badges": "Badges",
+    "currencies-balance.peding.description": "Peding Balance",
+    "currencies-balance.avalible.description": "Avalible Balance"
+
   }
 }

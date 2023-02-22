@@ -76,8 +76,7 @@ class LoginPage extends BbvaCoreIntlMixin(CellsPage) {
 
       this._setToast('success', 'Inicio de session correcto');
       const _tsec = this.shadowRoot.querySelector('#taining-dm');
-
-      console.log(_tsec.user)
+      
       this.publish('user_name', _tsec.user);
       this.navigate('dashboard');
     } else {
@@ -113,7 +112,7 @@ class LoginPage extends BbvaCoreIntlMixin(CellsPage) {
 
   render() {
     return html`
-      <cells-template-paper-drawer-panel mode="seamed">
+      <cells-template-paper-drawer-panel mode="seamed" class="login-wrapper">
       
         <div slot="app__header">
           <bbva-header-main text="BBVA">

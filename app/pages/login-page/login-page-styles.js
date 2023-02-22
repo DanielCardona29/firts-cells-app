@@ -27,6 +27,12 @@ cells-template-paper-drawer-panel {
 
 .toast-wrapper {
   position: absolute;
+  width: 100%;
   bottom: 0;
+}
+
+.login-wrapper {
+  height: 100vh;
+  overflow-y: hidden;
 }
 `;

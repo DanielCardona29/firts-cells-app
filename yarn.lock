@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@ampproject/remapping@^2.1.0":
+"@ampproject/remapping@^2.2.0":
   version "2.2.0"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@ampproject/remapping/-/remapping-2.2.0.tgz#56c133824780de3174aed5ab6834f3026790154d"
   integrity sha1-VsEzgkeA3jF0rtWraDTzAmeQFU0=
@@ -25,38 +25,39 @@
     "@babel/highlight" "^7.18.6"
 
 "@babel/compat-data@^7.17.7", "@babel/compat-data@^7.20.1", "@babel/compat-data@^7.20.5":
-  version "7.20.14"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/compat-data/-/compat-data-7.20.14.tgz#4106fc8b755f3e3ee0a0a7c27dde5de1d2b2baf8"
-  integrity sha1-QQb8i3VfPj7goKfCfd5d4dKyuvg=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/compat-data/-/compat-data-7.21.0.tgz#c241dc454e5b5917e40d37e525e2f4530c399298"
+  integrity sha1-wkHcRU5bWRfkDTflJeL0Uww5kpg=
 
 "@babel/core@^7.0.0", "@babel/core@^7.11.1", "@babel/core@^7.12.3":
-  version "7.20.12"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/core/-/core-7.20.12.tgz#7930db57443c6714ad216953d1356dac0eb8496d"
-  integrity sha1-eTDbV0Q8ZxStIWlT0TVtrA64SW0=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/core/-/core-7.21.0.tgz#1341aefdcc14ccc7553fcc688dd8986a2daffc13"
+  integrity sha1-E0Gu/cwUzMdVP8xojdiYai2v/BM=
   dependencies:
-    "@ampproject/remapping" "^2.1.0"
+    "@ampproject/remapping" "^2.2.0"
     "@babel/code-frame" "^7.18.6"
-    "@babel/generator" "^7.20.7"
+    "@babel/generator" "^7.21.0"
     "@babel/helper-compilation-targets" "^7.20.7"
-    "@babel/helper-module-transforms" "^7.20.11"
-    "@babel/helpers" "^7.20.7"
-    "@babel/parser" "^7.20.7"
+    "@babel/helper-module-transforms" "^7.21.0"
+    "@babel/helpers" "^7.21.0"
+    "@babel/parser" "^7.21.0"
     "@babel/template" "^7.20.7"
-    "@babel/traverse" "^7.20.12"
-    "@babel/types" "^7.20.7"
+    "@babel/traverse" "^7.21.0"
+    "@babel/types" "^7.21.0"
     convert-source-map "^1.7.0"
     debug "^4.1.0"
     gensync "^1.0.0-beta.2"
     json5 "^2.2.2"
     semver "^6.3.0"
 
-"@babel/generator@^7.20.7", "@babel/generator@^7.4.0":
-  version "7.20.14"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/generator/-/generator-7.20.14.tgz#9fa772c9f86a46c6ac9b321039400712b96f64ce"
-  integrity sha1-n6dyyfhqRsasmzIQOUAHErlvZM4=
+"@babel/generator@^7.21.0", "@babel/generator@^7.4.0":
+  version "7.21.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/generator/-/generator-7.21.1.tgz#951cc626057bc0af2c35cd23e9c64d384dea83dd"
+  integrity sha1-lRzGJgV7wK8sNc0j6cZNOE3qg90=
   dependencies:
-    "@babel/types" "^7.20.7"
+    "@babel/types" "^7.21.0"
     "@jridgewell/gen-mapping" "^0.3.2"
+    "@jridgewell/trace-mapping" "^0.3.17"
     jsesc "^2.5.1"
 
 "@babel/helper-annotate-as-pure@^7.18.6":
@@ -85,27 +86,27 @@
     lru-cache "^5.1.1"
     semver "^6.3.0"
 
-"@babel/helper-create-class-features-plugin@^7.18.6", "@babel/helper-create-class-features-plugin@^7.20.12", "@babel/helper-create-class-features-plugin@^7.20.5", "@babel/helper-create-class-features-plugin@^7.20.7":
-  version "7.20.12"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.20.12.tgz#4349b928e79be05ed2d1643b20b99bb87c503819"
-  integrity sha1-Q0m5KOeb4F7S0WQ7ILmbuHxQOBk=
+"@babel/helper-create-class-features-plugin@^7.18.6", "@babel/helper-create-class-features-plugin@^7.21.0":
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.21.0.tgz#64f49ecb0020532f19b1d014b03bccaa1ab85fb9"
+  integrity sha1-ZPSeywAgUy8ZsdAUsDvMqhq4X7k=
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.18.6"
     "@babel/helper-environment-visitor" "^7.18.9"
-    "@babel/helper-function-name" "^7.19.0"
-    "@babel/helper-member-expression-to-functions" "^7.20.7"
+    "@babel/helper-function-name" "^7.21.0"
+    "@babel/helper-member-expression-to-functions" "^7.21.0"
     "@babel/helper-optimise-call-expression" "^7.18.6"
     "@babel/helper-replace-supers" "^7.20.7"
     "@babel/helper-skip-transparent-expression-wrappers" "^7.20.0"
     "@babel/helper-split-export-declaration" "^7.18.6"
 
 "@babel/helper-create-regexp-features-plugin@^7.18.6", "@babel/helper-create-regexp-features-plugin@^7.20.5":
-  version "7.20.5"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-create-regexp-features-plugin/-/helper-create-regexp-features-plugin-7.20.5.tgz#5ea79b59962a09ec2acf20a963a01ab4d076ccca"
-  integrity sha1-XqebWZYqCewqzyCpY6AatNB2zMo=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-create-regexp-features-plugin/-/helper-create-regexp-features-plugin-7.21.0.tgz#53ff78472e5ce10a52664272a239787107603ebb"
+  integrity sha1-U/94Ry5c4QpSZkJyojl4cQdgPrs=
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.18.6"
-    regexpu-core "^5.2.1"
+    regexpu-core "^5.3.1"
 
 "@babel/helper-define-polyfill-provider@^0.3.3":
   version "0.3.3"
@@ -131,13 +132,13 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
-"@babel/helper-function-name@^7.18.9", "@babel/helper-function-name@^7.19.0":
-  version "7.19.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-function-name/-/helper-function-name-7.19.0.tgz#941574ed5390682e872e52d3f38ce9d1bef4648c"
-  integrity sha1-lBV07VOQaC6HLlLT84zp0b70ZIw=
+"@babel/helper-function-name@^7.18.9", "@babel/helper-function-name@^7.19.0", "@babel/helper-function-name@^7.21.0":
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-function-name/-/helper-function-name-7.21.0.tgz#d552829b10ea9f120969304023cd0645fa00b1b4"
+  integrity sha1-1VKCmxDqnxIJaTBAI80GRfoAsbQ=
   dependencies:
-    "@babel/template" "^7.18.10"
-    "@babel/types" "^7.19.0"
+    "@babel/template" "^7.20.7"
+    "@babel/types" "^7.21.0"
 
 "@babel/helper-hoist-variables@^7.18.6":
   version "7.18.6"
@@ -146,12 +147,12 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
-"@babel/helper-member-expression-to-functions@^7.20.7":
-  version "7.20.7"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.20.7.tgz#a6f26e919582275a93c3aa6594756d71b0bb7f05"
-  integrity sha1-pvJukZWCJ1qTw6pllHVtcbC7fwU=
+"@babel/helper-member-expression-to-functions@^7.20.7", "@babel/helper-member-expression-to-functions@^7.21.0":
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.21.0.tgz#319c6a940431a133897148515877d2f3269c3ba5"
+  integrity sha1-MZxqlAQxoTOJcUhRWHfS8yacO6U=
   dependencies:
-    "@babel/types" "^7.20.7"
+    "@babel/types" "^7.21.0"
 
 "@babel/helper-module-imports@^7.18.6":
   version "7.18.6"
@@ -160,10 +161,10 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
-"@babel/helper-module-transforms@^7.18.6", "@babel/helper-module-transforms@^7.20.11":
-  version "7.20.11"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-module-transforms/-/helper-module-transforms-7.20.11.tgz#df4c7af713c557938c50ea3ad0117a7944b2f1b0"
-  integrity sha1-30x69xPFV5OMUOo60BF6eUSy8bA=
+"@babel/helper-module-transforms@^7.18.6", "@babel/helper-module-transforms@^7.20.11", "@babel/helper-module-transforms@^7.21.0":
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-module-transforms/-/helper-module-transforms-7.21.0.tgz#89a8f86ad748870e3d024e470b2e8405e869db67"
+  integrity sha1-iaj4atdIhw49Ak5HCy6EBehp22c=
   dependencies:
     "@babel/helper-environment-visitor" "^7.18.9"
     "@babel/helper-module-imports" "^7.18.6"
@@ -171,8 +172,8 @@
     "@babel/helper-split-export-declaration" "^7.18.6"
     "@babel/helper-validator-identifier" "^7.19.1"
     "@babel/template" "^7.20.7"
-    "@babel/traverse" "^7.20.10"
-    "@babel/types" "^7.20.7"
+    "@babel/traverse" "^7.21.0"
+    "@babel/types" "^7.21.0"
 
 "@babel/helper-optimise-call-expression@^7.18.6":
   version "7.18.6"
@@ -240,9 +241,9 @@
   integrity sha1-fuqDTPMpAf/cGn7lVeL5wn4knKI=
 
 "@babel/helper-validator-option@^7.18.6":
-  version "7.18.6"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-validator-option/-/helper-validator-option-7.18.6.tgz#bf0d2b5a509b1f336099e4ff36e1a63aa5db4db8"
-  integrity sha1-vw0rWlCbHzNgmeT/NuGmOqXbTbg=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-validator-option/-/helper-validator-option-7.21.0.tgz#8224c7e13ace4bafdc4004da2cf064ef42673180"
+  integrity sha1-giTH4TrOS6/cQATaLPBk70JnMYA=
 
 "@babel/helper-wrap-function@^7.18.9":
   version "7.20.5"
@@ -254,14 +255,14 @@
     "@babel/traverse" "^7.20.5"
     "@babel/types" "^7.20.5"
 
-"@babel/helpers@^7.20.7":
-  version "7.20.13"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helpers/-/helpers-7.20.13.tgz#e3cb731fb70dc5337134cadc24cbbad31cc87ad2"
-  integrity sha1-48tzH7cNxTNxNMrcJMu60xzIetI=
+"@babel/helpers@^7.21.0":
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helpers/-/helpers-7.21.0.tgz#9dd184fb5599862037917cdc9eecb84577dc4e7e"
+  integrity sha1-ndGE+1WZhiA3kXzcnuy4RXfcTn4=
   dependencies:
     "@babel/template" "^7.20.7"
-    "@babel/traverse" "^7.20.13"
-    "@babel/types" "^7.20.7"
+    "@babel/traverse" "^7.21.0"
+    "@babel/types" "^7.21.0"
 
 "@babel/highlight@^7.10.4", "@babel/highlight@^7.18.6":
   version "7.18.6"
@@ -272,10 +273,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.13", "@babel/parser@^7.20.7", "@babel/parser@^7.4.3":
-  version "7.20.15"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/parser/-/parser-7.20.15.tgz#eec9f36d8eaf0948bb88c87a46784b5ee9fd0c89"
-  integrity sha1-7snzbY6vCUi7iMh6RnhLXun9DIk=
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.7", "@babel/parser@^7.21.0", "@babel/parser@^7.4.3":
+  version "7.21.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/parser/-/parser-7.21.1.tgz#a8f81ee2fe872af23faea4b17a08fcc869de7bcc"
+  integrity sha1-qPge4v6HKvI/rqSxegj8yGnee8w=
 
 "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@^7.18.6":
   version "7.18.6"
@@ -312,24 +313,24 @@
     "@babel/helper-plugin-utils" "^7.18.6"
 
 "@babel/plugin-proposal-class-static-block@^7.18.6":
-  version "7.20.7"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-proposal-class-static-block/-/plugin-proposal-class-static-block-7.20.7.tgz#92592e9029b13b15be0f7ce6a7aedc2879ca45a7"
-  integrity sha1-klkukCmxOxW+D3zmp67cKHnKRac=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-proposal-class-static-block/-/plugin-proposal-class-static-block-7.21.0.tgz#77bdd66fb7b605f3a61302d224bdfacf5547977d"
+  integrity sha1-d73Wb7e2BfOmEwLSJL36z1VHl30=
   dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.20.7"
+    "@babel/helper-create-class-features-plugin" "^7.21.0"
     "@babel/helper-plugin-utils" "^7.20.2"
     "@babel/plugin-syntax-class-static-block" "^7.14.5"
 
 "@babel/plugin-proposal-decorators@^7.0.0":
-  version "7.20.13"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.20.13.tgz#b6bea3b18e88443688fa7ed2cc06d2c60da9f4a7"
-  integrity sha1-tr6jsY6IRDaI+n7SzAbSxg2p9Kc=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.21.0.tgz#70e0c89fdcd7465c97593edb8f628ba6e4199d63"
+  integrity sha1-cODIn9zXRlyXWT7bj2KLpuQZnWM=
   dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.20.12"
+    "@babel/helper-create-class-features-plugin" "^7.21.0"
     "@babel/helper-plugin-utils" "^7.20.2"
     "@babel/helper-replace-supers" "^7.20.7"
     "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/plugin-syntax-decorators" "^7.19.0"
+    "@babel/plugin-syntax-decorators" "^7.21.0"
 
 "@babel/plugin-proposal-dynamic-import@^7.10.4", "@babel/plugin-proposal-dynamic-import@^7.18.6":
   version "7.18.6"
@@ -399,9 +400,9 @@
     "@babel/plugin-syntax-optional-catch-binding" "^7.8.3"
 
 "@babel/plugin-proposal-optional-chaining@^7.11.0", "@babel/plugin-proposal-optional-chaining@^7.18.9", "@babel/plugin-proposal-optional-chaining@^7.20.7":
-  version "7.20.7"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-proposal-optional-chaining/-/plugin-proposal-optional-chaining-7.20.7.tgz#49f2b372519ab31728cc14115bb0998b15bfda55"
-  integrity sha1-SfKzclGasxcozBQRW7CZixW/2lU=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-proposal-optional-chaining/-/plugin-proposal-optional-chaining-7.21.0.tgz#886f5c8978deb7d30f678b2e24346b287234d3ea"
+  integrity sha1-iG9ciXjet9MPZ4suJDRrKHI00+o=
   dependencies:
     "@babel/helper-plugin-utils" "^7.20.2"
     "@babel/helper-skip-transparent-expression-wrappers" "^7.20.0"
@@ -416,12 +417,12 @@
     "@babel/helper-plugin-utils" "^7.18.6"
 
 "@babel/plugin-proposal-private-property-in-object@^7.18.6":
-  version "7.20.5"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-proposal-private-property-in-object/-/plugin-proposal-private-property-in-object-7.20.5.tgz#309c7668f2263f1c711aa399b5a9a6291eef6135"
-  integrity sha1-MJx2aPImPxxxGqOZtammKR7vYTU=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-proposal-private-property-in-object/-/plugin-proposal-private-property-in-object-7.21.0.tgz#19496bd9883dd83c23c7d7fc45dcd9ad02dfa1dc"
+  integrity sha1-GUlr2Yg92Dwjx9f8RdzZrQLfodw=
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.18.6"
-    "@babel/helper-create-class-features-plugin" "^7.20.5"
+    "@babel/helper-create-class-features-plugin" "^7.21.0"
     "@babel/helper-plugin-utils" "^7.20.2"
     "@babel/plugin-syntax-private-property-in-object" "^7.14.5"
 
@@ -454,12 +455,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-syntax-decorators@^7.19.0":
-  version "7.19.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-syntax-decorators/-/plugin-syntax-decorators-7.19.0.tgz#5f13d1d8fce96951bea01a10424463c9a5b3a599"
-  integrity sha1-XxPR2PzpaVG+oBoQQkRjyaWzpZk=
+"@babel/plugin-syntax-decorators@^7.21.0":
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-syntax-decorators/-/plugin-syntax-decorators-7.21.0.tgz#d2b3f31c3e86fa86e16bb540b7660c55bd7d0e78"
+  integrity sha1-0rPzHD6G+obha7VAt2YMVb19Dng=
   dependencies:
-    "@babel/helper-plugin-utils" "^7.19.0"
+    "@babel/helper-plugin-utils" "^7.20.2"
 
 "@babel/plugin-syntax-dynamic-import@^7.8.3":
   version "7.8.3"
@@ -576,21 +577,21 @@
     "@babel/helper-plugin-utils" "^7.18.6"
 
 "@babel/plugin-transform-block-scoping@^7.20.2":
-  version "7.20.15"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-transform-block-scoping/-/plugin-transform-block-scoping-7.20.15.tgz#3e1b2aa9cbbe1eb8d644c823141a9c5c2a22392d"
-  integrity sha1-Phsqqcu+HrjWRMgjFBqcXCoiOS0=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-transform-block-scoping/-/plugin-transform-block-scoping-7.21.0.tgz#e737b91037e5186ee16b76e7ae093358a5634f02"
+  integrity sha1-5ze5EDflGG7ha3bnrgkzWKVjTwI=
   dependencies:
     "@babel/helper-plugin-utils" "^7.20.2"
 
 "@babel/plugin-transform-classes@^7.20.2":
-  version "7.20.7"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-transform-classes/-/plugin-transform-classes-7.20.7.tgz#f438216f094f6bb31dc266ebfab8ff05aecad073"
-  integrity sha1-9DghbwlPa7Mdwmbr+rj/Ba7K0HM=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-transform-classes/-/plugin-transform-classes-7.21.0.tgz#f469d0b07a4c5a7dbb21afad9e27e57b47031665"
+  integrity sha1-9GnQsHpMWn27Ia+tnifle0cDFmU=
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.18.6"
     "@babel/helper-compilation-targets" "^7.20.7"
     "@babel/helper-environment-visitor" "^7.18.9"
-    "@babel/helper-function-name" "^7.19.0"
+    "@babel/helper-function-name" "^7.21.0"
     "@babel/helper-optimise-call-expression" "^7.18.6"
     "@babel/helper-plugin-utils" "^7.20.2"
     "@babel/helper-replace-supers" "^7.20.7"
@@ -636,11 +637,11 @@
     "@babel/helper-plugin-utils" "^7.18.6"
 
 "@babel/plugin-transform-for-of@^7.18.8":
-  version "7.18.8"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-transform-for-of/-/plugin-transform-for-of-7.18.8.tgz#6ef8a50b244eb6a0bdbad0c7c61877e4e30097c1"
-  integrity sha1-bvilCyROtqC9utDHxhh35OMAl8E=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-transform-for-of/-/plugin-transform-for-of-7.21.0.tgz#964108c9988de1a60b4be2354a7d7e245f36e86e"
+  integrity sha1-lkEIyZiN4aYLS+I1Sn1+JF826G4=
   dependencies:
-    "@babel/helper-plugin-utils" "^7.18.6"
+    "@babel/helper-plugin-utils" "^7.20.2"
 
 "@babel/plugin-transform-function-name@^7.18.9":
   version "7.18.9"
@@ -901,17 +902,17 @@
   integrity sha1-8LppsHXh8F+yglt/rZkeetuxgxA=
 
 "@babel/runtime-corejs3@^7.10.2":
-  version "7.20.13"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/runtime-corejs3/-/runtime-corejs3-7.20.13.tgz#ad012857db412ab0b5ccf184b67be2cfcc2a1dcf"
-  integrity sha1-rQEoV9tBKrC1zPGEtnviz8wqHc8=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/runtime-corejs3/-/runtime-corejs3-7.21.0.tgz#6e4939d9d9789ff63e2dc58e88f13a3913a24eba"
+  integrity sha1-bkk52dl4n/Y+LcWOiPE6OROiTro=
   dependencies:
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.11"
 
 "@babel/runtime@^7.10.2", "@babel/runtime@^7.8.4":
-  version "7.20.13"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/runtime/-/runtime-7.20.13.tgz#7055ab8a7cff2b8f6058bf6ae45ff84ad2aded4b"
-  integrity sha1-cFWrinz/K49gWL9q5F/4StKt7Us=
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
+  integrity sha1-W1XJ05Tl/PMEkJqLAMB9whe1ZnM=
   dependencies:
     regenerator-runtime "^0.13.11"
 
@@ -924,26 +925,26 @@
     "@babel/parser" "^7.20.7"
     "@babel/types" "^7.20.7"
 
-"@babel/traverse@^7.20.10", "@babel/traverse@^7.20.12", "@babel/traverse@^7.20.13", "@babel/traverse@^7.20.5", "@babel/traverse@^7.20.7", "@babel/traverse@^7.4.3":
-  version "7.20.13"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/traverse/-/traverse-7.20.13.tgz#817c1ba13d11accca89478bd5481b2d168d07473"
-  integrity sha1-gXwboT0RrMyolHi9VIGy0WjQdHM=
+"@babel/traverse@^7.20.5", "@babel/traverse@^7.20.7", "@babel/traverse@^7.21.0", "@babel/traverse@^7.4.3":
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/traverse/-/traverse-7.21.0.tgz#0e1807abd5db98e6a19c204b80ed1e3f5bca0edc"
+  integrity sha1-DhgHq9XbmOahnCBLgO0eP1vKDtw=
   dependencies:
     "@babel/code-frame" "^7.18.6"
-    "@babel/generator" "^7.20.7"
+    "@babel/generator" "^7.21.0"
     "@babel/helper-environment-visitor" "^7.18.9"
-    "@babel/helper-function-name" "^7.19.0"
+    "@babel/helper-function-name" "^7.21.0"
     "@babel/helper-hoist-variables" "^7.18.6"
     "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/parser" "^7.20.13"
-    "@babel/types" "^7.20.7"
+    "@babel/parser" "^7.21.0"
+    "@babel/types" "^7.21.0"
     debug "^4.1.0"
     globals "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.18.9", "@babel/types@^7.19.0", "@babel/types@^7.20.0", "@babel/types@^7.20.2", "@babel/types@^7.20.5", "@babel/types@^7.20.7", "@babel/types@^7.3.0", "@babel/types@^7.4.0", "@babel/types@^7.4.4":
-  version "7.20.7"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/types/-/types-7.20.7.tgz#54ec75e252318423fc07fb644dc6a58a64c09b7f"
-  integrity sha1-VOx14lIxhCP8B/tkTcalimTAm38=
+"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.18.9", "@babel/types@^7.20.0", "@babel/types@^7.20.2", "@babel/types@^7.20.5", "@babel/types@^7.20.7", "@babel/types@^7.21.0", "@babel/types@^7.3.0", "@babel/types@^7.4.0", "@babel/types@^7.4.4":
+  version "7.21.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/types/-/types-7.21.0.tgz#1da00d89c2f18b226c9207d96edbeb79316a1819"
+  integrity sha1-HaANicLxiyJskgfZbtvreTFqGBk=
   dependencies:
     "@babel/helper-string-parser" "^7.19.4"
     "@babel/helper-validator-identifier" "^7.19.1"
@@ -1041,7 +1042,7 @@
     lit-element "^2.0.0"
     lit-html "^1.0.0"
 
-"@bbva-web-components/bbva-badge-notification@^5.0.4":
+"@bbva-web-components/bbva-badge-notification@^5.0.0", "@bbva-web-components/bbva-badge-notification@^5.0.4":
   version "5.0.4"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-badge-notification/-/@bbva-web-components/bbva-badge-notification-5.0.4.tgz#71d42254e1f30435de211f98615558a9dbafdbf8"
   integrity sha1-cdQiVOHzBDXeIR+YYVVYqduv2/g=
@@ -1633,27 +1634,27 @@
     lit-element "^2.0.0"
     lit-html "^1.0.0"
 
-"@bbva-web-components/bbva-header-main@^7.0.0":
-  version "7.9.2"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-header-main/-/@bbva-web-components/bbva-header-main-7.9.2.tgz#0679048751f8a53031d24d0c640b0bcd0e176fa4"
-  integrity sha1-BnkEh1H4pTAx0k0MZAsLzQ4Xb6Q=
+"@bbva-web-components/bbva-header-main@^7.0.0", "@bbva-web-components/bbva-header-main@^7.10.0":
+  version "7.10.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-header-main/-/@bbva-web-components/bbva-header-main-7.10.0.tgz#9ae024e067feb035567126aab8f74aef6678ec80"
+  integrity sha1-muAk4Gf+sDVWcSaquPdK72Z47IA=
   dependencies:
-    "@bbva-web-components/bbva-badge-notification" "^5.0.4"
-    "@bbva-web-components/bbva-component-configuration-mixin" "^1.4.1"
+    "@bbva-web-components/bbva-badge-notification" "^5.0.0"
+    "@bbva-web-components/bbva-component-configuration-mixin" "^1.0.0"
     "@bbva-web-components/bbva-core-focus-visible-mixin" "^1.0.0"
     "@bbva-web-components/bbva-core-icon" "^1.0.0"
     "@bbva-web-components/bbva-core-intl-mixin" "^1.0.0"
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
     "@bbva-web-components/bbva-foundations-microillustrations" "^5.0.0"
     "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
-    "@bbva-web-components/bbva-text" "^1.22.3"
+    "@bbva-web-components/bbva-text" "^1.0.0"
     lit-element "^2.0.0"
     lit-html "^1.0.0"
 
 "@bbva-web-components/bbva-help-modal@^4.0.0":
-  version "4.11.15"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-help-modal/-/@bbva-web-components/bbva-help-modal-4.11.15.tgz#7f0b6885342d5407674925ba759042b402a53a6b"
-  integrity sha1-fwtohTQtVAdnSSW6dZBCtAKlOms=
+  version "4.11.16"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-help-modal/-/@bbva-web-components/bbva-help-modal-4.11.16.tgz#a26491d8e19b8bac764c3706ef11a0cc9a772fa0"
+  integrity sha1-omSR2OGbi6x2TDcG7xGgzJp3L6A=
   dependencies:
     "@bbva-web-components/bbva-button-default" "^5.0.0"
     "@bbva-web-components/bbva-component-configuration-mixin" "^1.0.0"
@@ -1662,7 +1663,7 @@
     "@bbva-web-components/bbva-core-modal" "^1.0.0"
     "@bbva-web-components/bbva-foundations-icons" "^1.0.0"
     "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
-    "@bbva-web-components/bbva-header-main" "^7.0.0"
+    "@bbva-web-components/bbva-header-main" "^7.10.0"
     "@bbva-web-components/bbva-icon" "^2.0.0"
     "@bbva-web-components/bbva-link" "^3.0.0"
     "@bbva-web-components/bbva-text" "^1.0.0"
@@ -1931,9 +1932,9 @@
     "@cells/bgadp-sources-common" "1.18.0"
 
 "@cells-components/bgadp-granting-tickets-v0@^4.40.0":
-  version "4.40.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-granting-tickets-v0/-/@cells-components/bgadp-granting-tickets-v0-4.40.0.tgz#7257aa603666f82d6960fcaedfd84acc8623363c"
-  integrity sha1-cleqYDZm+C1pYPyu39hKzIYjNjw=
+  version "4.41.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-granting-tickets-v0/-/@cells-components/bgadp-granting-tickets-v0-4.41.0.tgz#7131c095e80ed6f8bf81172fddef03eda1f9e25e"
+  integrity sha1-cTHAlegO1vi/gRcv3e8D7aH54l4=
   dependencies:
     "@cells/bgadp-sources-common" "1.18.0"
 
@@ -2216,7 +2217,7 @@
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
   integrity sha1-rdTJjTQUcqKJGQtCTvvbCWmRuyQ=
 
-"@jridgewell/trace-mapping@^0.3.9":
+"@jridgewell/trace-mapping@^0.3.17", "@jridgewell/trace-mapping@^0.3.9":
   version "0.3.17"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@jridgewell/trace-mapping/-/trace-mapping-0.3.17.tgz#793041277af9073b0951a7fe0f0d8c4c98c36985"
   integrity sha1-eTBBJ3r5BzsJUaf+Dw2MTJjDaYU=
@@ -2498,11 +2499,20 @@
 
 "@training/cells-training-card-dm@git+https://github.com/DanielCardona29/cells-training-card-dm.git#master":
   version "1.0.0-rc.1"
-  resolved "git+https://github.com/DanielCardona29/cells-training-card-dm.git#78198d722699ce7ae84a99b5659982989cc8e47b"
+  resolved "git+https://github.com/DanielCardona29/cells-training-card-dm.git#aee7e890f62bdbd0aa6a4ca5820f5e89e9a00083"
   dependencies:
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.4"
     "@bbva-web-components/bbva-foundations-styles" "^2.3.5"
     "@cells-components/bgadp-cards-v0" "^4.40.0"
+    lit-element "^2.0.0"
+
+"@training/cells-training-cards-panel-ui@git+https://github.com/DanielCardona29/cells-training-cards-panel-ui.git#master":
+  version "1.0.0-rc.1"
+  resolved "git+https://github.com/DanielCardona29/cells-training-cards-panel-ui.git#c1fbcf07b817abf4a393b3e3dd650e6b9e46ad42"
+  dependencies:
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.4"
+    "@bbva-web-components/bbva-foundations-styles" "^2.3.5"
+    "@bbva-web-components/bbva-list-card" "^7.18.9"
     lit-element "^2.0.0"
 
 "@types/accepts@*":
@@ -2795,9 +2805,9 @@
     "@types/node" "*"
 
 "@types/koa__cors@^3.0.1":
-  version "3.3.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@types/koa__cors/-/koa__cors-3.3.0.tgz#2986b320d3d7ddf05c4e2e472b25a321cb16bd3b"
-  integrity sha1-KYazINPX3fBcTi5HKyWjIcsWvTs=
+  version "3.3.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@types/koa__cors/-/koa__cors-3.3.1.tgz#0ec7543c4c620fd23451bfdd3e21b9a6aadedccd"
+  integrity sha1-DsdUPExiD9I0Ub/dPiG5pqre3M0=
   dependencies:
     "@types/koa" "*"
 
@@ -2827,9 +2837,9 @@
   integrity sha1-MV1XDMtWxTRS/4Y4c432BybVtuo=
 
 "@types/node@*":
-  version "18.13.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@types/node/-/node-18.13.0.tgz#0400d1e6ce87e9d3032c19eb6c58205b0d3f7850"
-  integrity sha1-BADR5s6H6dMDLBnrbFggWw0/eFA=
+  version "18.14.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@types/node/-/node-18.14.0.tgz#94c47b9217bbac49d4a67a967fdcdeed89ebb7d0"
+  integrity sha1-lMR7khe7rEnUpnqWf9ze7Ynrt9A=
 
 "@types/node@^11.13.0":
   version "11.15.54"
@@ -3388,7 +3398,7 @@ bluebird@^3.3.0:
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha1-nyKcFb4nJFT/qXOs4NvueaGww28=
 
-body-parser@1.20.1, body-parser@^1.16.1, body-parser@^1.19.0:
+body-parser@1.20.1:
   version "1.20.1"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/body-parser/-/body-parser-1.20.1.tgz#b1812a8912c195cd371a3ee5e66faa2338a5c668"
   integrity sha1-sYEqiRLBlc03Gj7l5m+qIzilxmg=
@@ -3403,6 +3413,24 @@ body-parser@1.20.1, body-parser@^1.16.1, body-parser@^1.19.0:
     on-finished "2.4.1"
     qs "6.11.0"
     raw-body "2.5.1"
+    type-is "~1.6.18"
+    unpipe "1.0.0"
+
+body-parser@^1.16.1, body-parser@^1.19.0:
+  version "1.20.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/body-parser/-/body-parser-1.20.2.tgz#6feb0e21c4724d06de7ff38da36dad4f57a747fd"
+  integrity sha1-b+sOIcRyTQbef/ONo22tT1enR/0=
+  dependencies:
+    bytes "3.1.2"
+    content-type "~1.0.5"
+    debug "2.6.9"
+    depd "2.0.0"
+    destroy "1.2.0"
+    http-errors "2.0.0"
+    iconv-lite "0.4.24"
+    on-finished "2.4.1"
+    qs "6.11.0"
+    raw-body "2.5.2"
     type-is "~1.6.18"
     unpipe "1.0.0"
 
@@ -3553,9 +3581,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001033, caniuse-lite@^1.0.30001449:
-  version "1.0.30001452"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/caniuse-lite/-/caniuse-lite-1.0.30001452.tgz#dff7b8bb834b3a91808f0a9ff0453abb1fbba02a"
-  integrity sha1-3/e4u4NLOpGAjwqf8EU6ux+7oCo=
+  version "1.0.30001457"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/caniuse-lite/-/caniuse-lite-1.0.30001457.tgz#6af34bb5d720074e2099432aa522c21555a18301"
+  integrity sha1-avNLtdcgB04gmUMqpSLCFVWhgwE=
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -3853,7 +3881,7 @@ content-disposition@0.5.4, content-disposition@~0.5.2:
   dependencies:
     safe-buffer "5.2.1"
 
-content-type@^1.0.4, content-type@~1.0.4:
+content-type@^1.0.4, content-type@~1.0.4, content-type@~1.0.5:
   version "1.0.5"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/content-type/-/content-type-1.0.5.tgz#8b773162656d1d1086784c8f23a54ce6d73d7918"
   integrity sha1-i3cxYmVtHRCGeEyPI6VM5tc9eRg=
@@ -4195,9 +4223,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.4.284, electron-to-chromium@^1.4.67:
-  version "1.4.296"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/electron-to-chromium/-/electron-to-chromium-1.4.296.tgz#dbc84a25c25a432a12fbf62903cae4a87461eb8c"
-  integrity sha1-28hKJcJaQyoS+/YpA8rkqHRh64w=
+  version "1.4.305"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/electron-to-chromium/-/electron-to-chromium-1.4.305.tgz#e4dfe3e06ab783f33171f9bde9e8ed092510fcd0"
+  integrity sha1-5N/j4Gq3g/Mxcfm96ejtCSUQ/NA=
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -4732,9 +4760,9 @@ esprima@^4.0.0:
   integrity sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=
 
 esquery@^1.4.0:
-  version "1.4.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/esquery/-/esquery-1.4.0.tgz#2148ffc38b82e8c7057dfed48425b3e61f0f24a5"
-  integrity sha1-IUj/w4uC6McFff7UhCWz5h8PJKU=
+  version "1.4.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/esquery/-/esquery-1.4.2.tgz#c6d3fee05dd665808e2ad870631f221f5617b1d1"
+  integrity sha1-xtP+4F3WZYCOKthwYx8iH1YXsdE=
   dependencies:
     estraverse "^5.1.0"
 
@@ -6363,15 +6391,15 @@ log4js@^4.0.0:
     streamroller "^1.0.6"
 
 log4js@^6.2.1, log4js@^6.4.1:
-  version "6.7.1"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/log4js/-/log4js-6.7.1.tgz#06e12b1ac915dd1067146ffad8215f666f7d2c51"
-  integrity sha1-BuErGskV3RBnFG/62CFfZm99LFE=
+  version "6.8.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/log4js/-/log4js-6.8.0.tgz#f0fe9b2b82725aaf97f20692e23381a5c5722448"
+  integrity sha1-8P6bK4JyWq+X8gaS4jOBpcVyJEg=
   dependencies:
     date-format "^4.0.14"
     debug "^4.3.4"
     flatted "^3.2.7"
     rfdc "^1.3.0"
-    streamroller "^3.1.3"
+    streamroller "^3.1.5"
 
 lolex@^4.2.0:
   version "4.2.0"
@@ -6817,9 +6845,9 @@ open@^7.0.3:
     is-wsl "^2.1.1"
 
 open@^8.0.2:
-  version "8.4.1"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/open/-/open-8.4.1.tgz#2ab3754c07f5d1f99a7a8d6a82737c95e3101cff"
-  integrity sha1-KrN1TAf10fmaeo1qgnN8leMQHP8=
+  version "8.4.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/open/-/open-8.4.2.tgz#5b5ffe2a8f793dcd2aad73e550cb87b59cb084f9"
+  integrity sha1-W1/+Ko95Pc0qrXPlUMuHtZywhPk=
   dependencies:
     define-lazy-prop "^2.0.0"
     is-docker "^2.1.1"
@@ -7227,10 +7255,20 @@ range-parser@^1.2.0, range-parser@^1.2.1, range-parser@~1.2.1:
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE=
 
-raw-body@2.5.1, raw-body@^2.3.3:
+raw-body@2.5.1:
   version "2.5.1"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/raw-body/-/raw-body-2.5.1.tgz#fe1b1628b181b700215e5fd42389f98b71392857"
   integrity sha1-/hsWKLGBtwAhXl/UI4n5i3E5KFc=
+  dependencies:
+    bytes "3.1.2"
+    http-errors "2.0.0"
+    iconv-lite "0.4.24"
+    unpipe "1.0.0"
+
+raw-body@2.5.2, raw-body@^2.3.3:
+  version "2.5.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/raw-body/-/raw-body-2.5.2.tgz#99febd83b90e08975087e8f1f9419a149366b68a"
+  integrity sha1-mf69g7kOCJdQh+jx+UGaFJNmtoo=
   dependencies:
     bytes "3.1.2"
     http-errors "2.0.0"
@@ -7317,10 +7355,10 @@ regexpp@^3.1.0:
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/regexpp/-/regexpp-3.2.0.tgz#0425a2768d8f23bad70ca4b90461fa2f1213e1b2"
   integrity sha1-BCWido2PI7rXDKS5BGH6LxIT4bI=
 
-regexpu-core@^5.2.1:
-  version "5.3.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/regexpu-core/-/regexpu-core-5.3.0.tgz#4d0d044b76fedbad6238703ae84bfdedee2cf074"
-  integrity sha1-TQ0ES3b+261iOHA66Ev97e4s8HQ=
+regexpu-core@^5.3.1:
+  version "5.3.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/regexpu-core/-/regexpu-core-5.3.1.tgz#66900860f88def39a5cb79ebd9490e84f17bcdfb"
+  integrity sha1-ZpAIYPiN7zmly3nr2UkOhPF7zfs=
   dependencies:
     "@babel/regjsgen" "^0.8.0"
     regenerate "^1.4.2"
@@ -7855,10 +7893,10 @@ streamroller@^1.0.6:
     fs-extra "^7.0.1"
     lodash "^4.17.14"
 
-streamroller@^3.1.3:
-  version "3.1.4"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/streamroller/-/streamroller-3.1.4.tgz#844a18e795d39c1089a8216e66a1cf1151271df0"
-  integrity sha1-hEoY55XTnBCJqCFuZqHPEVEnHfA=
+streamroller@^3.1.5:
+  version "3.1.5"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/streamroller/-/streamroller-3.1.5.tgz#1263182329a45def1ffaef58d31b15d13d2ee7ff"
+  integrity sha1-EmMYIymkXe8f+u9Y0xsV0T0u5/8=
   dependencies:
     date-format "^4.0.14"
     debug "^4.3.4"

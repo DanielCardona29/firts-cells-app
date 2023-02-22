@@ -1,14 +1,12 @@
-;import { CellsPage } from '@cells/cells-page';
+import { CellsPage } from '@cells/cells-page';
 import { BbvaCoreIntlMixin } from '@bbva-web-components/bbva-core-intl-mixin';
 import { html } from 'lit-element';
 
 import '@cells-components/cells-template-paper-drawer-panel';
 import '@cells-components/cells-skeleton-loading-page';
 import '@bbva-web-components/bbva-help-modal/bbva-help-modal.js';
-import '@bbva-web-components/bbva-list-card/bbva-list-card';
-import '@bbva-web-components-widgets/cards-list-cards/cards-list-cards';
 import '@training/cells-training-card-dm/cells-training-card-dm.js';
-
+import '@training/cells-training-cards-panel-ui/cells-training-cards-panel-ui';
 import styles from './dashboard-page-styles.js';
 
 /* eslint-disable new-cap */
@@ -17,15 +15,14 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
   static get properties() {
     return {
       userName: { type: String },
-      isLoading: { type: Boolean },
+      isLoadingCards: { type: Boolean },
       cardsList: { type: Object }
     };
   }
 
   constructor() {
-    ;
     super();
-    this.isLoading = false;
+    this.isLoadingCards = false;
     this.cardsList = {
       data: []
     };
@@ -40,6 +37,11 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
   }
 
   onPageEnter() {
+    //Validacion del tsec
+    if(!window.sessionStorage.getItem('tsec')) {
+      this.navigate('login');
+    }
+    
     this.subscribe('user_name', (user) => {
       this.userName = user
       window.sessionStorage.setItem('user_name', this.userName);
@@ -52,9 +54,7 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
 
   _getCardsList() {
     const dataManager = this.shadowRoot.querySelector('cells-training-card-dm');
-    // cards.host = 'https://artichoke.platform.bbva.com';
-    // cards.version = '0';
-    this.isLoading = true;
+    this.isLoadingCards = true;
     dataManager && dataManager.getCards();
   }
 
@@ -65,22 +65,18 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
       const queryResponse = JSON.parse(response.response);
       queryResponse.data = queryResponse.data.map((card) => {
 
-        console.log(card)
         let status = '';
-        switch (card.status.id.toLowerCase()) {
-          case 'bloked':
-            status = 'bloked'
+        switch (card.status.id) {
+          case 'BLOCKED':
+            status = 'blocked'
             break;
-            case 'off':
-              status = 'off'
+          case 'off':
+            status = 'off'
             break;
           default:
             status = ''
             break;
         }
-
-        
-
         return {
           brand: card.brandAssociation.name,
           cardId: card.cardId,
@@ -91,8 +87,8 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
           status
         }
       })
-      
-      this.cardsList =queryResponse; 
+
+      this.cardsList = queryResponse;
     } else {
       this.cardsList = {
         data: [],
@@ -100,42 +96,13 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
         error: true
       }
     }
-
-    this.isLoading = false;
+    this.isLoadingCards = false;
   }
 
-  cardListMap() {
-    const { data }=this.cardsList;
-
-    const imagesList = [{id:'VISA', link: '/images/visa.png'}]
-
-
-    return data.map((card) => {
-      const formatter = new Intl.NumberFormat(window.IntlMsg.lang, {
-        style: 'currency',
-        currency: card.currentBalance.currency,
-        minimumFractionDigits: 2
-      })
-
-
-        return html`
-        <bbva-list-card
-          variant="card"
-          show-card
-          card-status=${card.status}
-          card-title=${card.name}
-          num-product=${card.cardNumber}
-          amount=${card.padingBalance.amount}
-          currency-code=${card.padingBalance.currency}
-          content-text=${this.t('currencies-balance.peding.description')}
-          credit-balance=${formatter.format(card.currentBalance.amount)}
-          secondary-currency-code=${card.currentBalance.currency}
-          content-text-extra=${this.t('currencies-balance.avalible.description')}
-          card-image=${imagesList.find(item => item.id === card.brand).link}
-          >
-          </bbva-list-card>
-        `
-    });
+  cardClick(event) {
+    const {detail}= event;
+    this.publish('card_id', detail);
+    this.navigate('card');
   }
 
   render() {
@@ -150,7 +117,7 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     <cells-template-paper-drawer-panel mode="seamed">
       <div slot="app__header">
         <bbva-header-main icon-left-primary="coronita:on" accessibility-text-icon-left-primary="Cerrar Sesión"
-          @header-main-icon-left-primary-click=${()=> this._logoutModal.open()}
+          @header-main-icon-left-primary-click=${() => this._logoutModal.open()}
           icon-right-primary="coronita:help"
           accessibility-text-icon-right-primary="Ayuda"
           @header-main-icon-right-primary-click=${() => this.navigate('help')}
@@ -161,16 +128,19 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     
     
       <div slot="app__main" class="container">
-        ${this.isLoading 
-        ? html`<cells-skeleton-loading-page visible></cells-skeleton-loading-page>`
-        : this.cardListMap()
-        }    
+        <div class="aling-center">
+          <h4>Tarjetas de credito</h4>
+          <div class="card-wrapper">
+            <cells-training-cards-panel-ui .isLoading=${this.isLoadingCards} .cardsList=${this.cardsList.data} @card-click=${this.cardClick}>
+            </cells-training-cards-panel-ui>
+          </div>
+        </div>
     
-  
+    
         <bbva-help-modal id="logoutModal" header-icon="coronita:info"
           header-text=${this.t('dashboard-page.logout-modal.header')}
-          button-text=${this.t('dashboard-page.logout-modal.button')} @help-modal-footer-button-click=${()=>
-        window.cells.logout()}>
+          button-text=${this.t('dashboard-page.logout-modal.button')} @help-modal-footer-button-click=${() =>
+           window.cells.logout()}>
           <div slot="slot-content">
             <span>${this.t('dashboard-page.logout-modal.slot')}</span>
           </div>

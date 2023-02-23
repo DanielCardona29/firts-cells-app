@@ -5,8 +5,12 @@ import { html } from 'lit-element';
 import '@cells-components/cells-template-paper-drawer-panel';
 import '@cells-components/cells-skeleton-loading-page';
 import '@bbva-web-components/bbva-help-modal/bbva-help-modal.js';
+
 import '@training/cells-training-card-dm/cells-training-card-dm.js';
 import '@training/cells-training-cards-panel-ui/cells-training-cards-panel-ui';
+
+import '@training/training-account-dm/training-account-dm';
+
 import styles from './dashboard-page-styles.js';
 
 /* eslint-disable new-cap */
@@ -16,15 +20,23 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     return {
       userName: { type: String },
       isLoadingCards: { type: Boolean },
-      cardsList: { type: Object }
+      isLoadingAccounst: { type: Boolean },
+      cardsList: { type: Object },
+      cardsError: { type: Boolean },
+
+      accountsList: { type: Array },
+      accountsError: { type: Boolean }
     };
   }
 
   constructor() {
     super();
     this.isLoadingCards = false;
+    this.isLoadingAccounst = false;
+    this.accountsList = [];
     this.cardsList = {
-      data: []
+      data: [],
+      apiInfo: []
     };
   }
 
@@ -33,15 +45,18 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     super.firstUpdated(changedProps);
 
     this._logoutModal = this.shadowRoot.querySelector('#logoutModal');
+
+    //Inicialiazadores para obtaner la data
     this._getCardsList();
+    this._getAccounst();
   }
 
   onPageEnter() {
     //Validacion del tsec
-    if(!window.sessionStorage.getItem('tsec')) {
+    if (!window.sessionStorage.getItem('tsec')) {
       this.navigate('login');
     }
-    
+
     this.subscribe('user_name', (user) => {
       this.userName = user
       window.sessionStorage.setItem('user_name', this.userName);
@@ -53,9 +68,15 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
   }
 
   _getCardsList() {
-    const dataManager = this.shadowRoot.querySelector('cells-training-card-dm');
+    const dataManager = this.shadowRoot.querySelector('#dm-cards');
     this.isLoadingCards = true;
     dataManager && dataManager.getCards();
+  }
+
+  _getAccounst() {
+    const dataManager = this.shadowRoot.querySelector('#dm-accounts');
+    this.isLoadingAccounst = true
+    dataManager && dataManager.getAccounts();
   }
 
   cardRequestResponse(event) {
@@ -99,9 +120,35 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     this.isLoadingCards = false;
   }
 
+  accountsGetResponse(event) {
+    const { detail: { response }, detail } = event;
+
+    if (detail.statusText !== "OK") {
+      this.accountsError = true;
+      return;
+    };
+
+    const JSONresponse = JSON.parse(response);
+
+    const mapData = JSONresponse.data.map((account) => {
+      return {
+        title: account.title.id,
+        status: account.status.id,
+        number: account.number,
+        alias: account.alias,
+        availableBalance: account.availableBalance,
+        accountType: account.accountType.id,
+        accountId: account.accountId,
+        accountFamily: account.accountFamily.id
+      }
+    });
+
+    this.accountsList = mapData;
+    console.log(this.accountsList)
+  }
+
   cardClick(event) {
-    const {detail}= event;
-    this.publish('card_id', detail);
+    this.publish('card_id', event);
     this.navigate('card');
   }
 
@@ -111,7 +158,7 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     return html`
 
     <cells-training-card-dm id="dm-cards" @request-cards-success=${this.cardRequestResponse}></cells-training-card-dm>
-    
+    <training-account-dm id="dm-accounts" @accounts-success=${this.accountsGetResponse}></training-account-dm>
     
     
     <cells-template-paper-drawer-panel mode="seamed">
@@ -131,7 +178,8 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
         <div class="aling-center">
           <h4>Tarjetas de credito</h4>
           <div class="card-wrapper">
-            <cells-training-cards-panel-ui .isLoading=${this.isLoadingCards} .cardsList=${this.cardsList.data} @card-click=${this.cardClick}>
+            <cells-training-cards-panel-ui .isLoading=${this.isLoadingCards} .cardsList=${this.cardsList.data}
+              @card-click=${this.cardClick}>
             </cells-training-cards-panel-ui>
           </div>
         </div>

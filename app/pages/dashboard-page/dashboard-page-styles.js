@@ -14,10 +14,12 @@ export default css`.card {
   padding-bottom: 10px;
   overflow-y: scroll;
   text-align: center;
+  min-width: 300px;
 }
 
 .aling-center {
   text-align: center;
   width: 50%;
+  min-width: 300px;
 }
 `;

@@ -32,6 +32,7 @@
     "@open-wc/lit-helpers": "^0.3.0",
     "@training/cells-training-card-dm": "git+https://github.com/DanielCardona29/cells-training-card-dm.git",
     "@training/cells-training-cards-panel-ui": "git+https://github.com/DanielCardona29/cells-training-cards-panel-ui.git#master",
+    "@training/training-account-dm": "git+https://github.com/DanielCardona29/training-account-dm.git",
     "@webcomponents/webcomponentsjs": "^2.5.0",
     "cells-app-template": "^6.0.0"
   },

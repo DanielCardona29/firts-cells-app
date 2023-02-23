@@ -1917,6 +1917,13 @@
     "@bbva-web-components/bbva-web-form-text" "^1.1.1"
     lit-element "^2.0.0"
 
+"@cells-components/bgadp-accounts-v0@^4.41.0":
+  version "4.41.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-accounts-v0/-/@cells-components/bgadp-accounts-v0-4.41.0.tgz#0cd06077852b89e716262ac0f0fe3537af6ae205"
+  integrity sha1-DNBgd4UriecWJirA8P41N69q4gU=
+  dependencies:
+    "@cells/bgadp-sources-common" "1.18.0"
+
 "@cells-components/bgadp-cards-v0@^4.0.0", "@cells-components/bgadp-cards-v0@^4.40.0":
   version "4.41.0"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-cards-v0/-/@cells-components/bgadp-cards-v0-4.41.0.tgz#7502908618089b381e6650525b4496dce5fec6bc"
@@ -2513,6 +2520,15 @@
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.4"
     "@bbva-web-components/bbva-foundations-styles" "^2.3.5"
     "@bbva-web-components/bbva-list-card" "^7.18.9"
+    lit-element "^2.0.0"
+
+"@training/training-account-dm@git+https://github.com/DanielCardona29/training-account-dm.git":
+  version "1.0.0-rc.1"
+  resolved "git+https://github.com/DanielCardona29/training-account-dm.git#ec289850a4b15f4e0f22c14ef85fd0967d9c03a5"
+  dependencies:
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.4"
+    "@bbva-web-components/bbva-foundations-styles" "^2.3.5"
+    "@cells-components/bgadp-accounts-v0" "^4.41.0"
     lit-element "^2.0.0"
 
 "@types/accepts@*":

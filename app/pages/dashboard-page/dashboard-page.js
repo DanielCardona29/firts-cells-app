@@ -70,7 +70,7 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
           case 'BLOCKED':
             status = 'blocked'
             break;
-          case 'off':
+          case 'INOPERATIVE':
             status = 'off'
             break;
           default:

@@ -2497,9 +2497,9 @@
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@sinonjs/text-encoding/-/text-encoding-0.7.2.tgz#5981a8db18b56ba38ef0efb7d995b12aa7b51918"
   integrity sha1-WYGo2xi1a6OO8O+32ZWxKqe1GRg=
 
-"@training/cells-training-card-dm@git+https://github.com/DanielCardona29/cells-training-card-dm.git#master":
+"@training/cells-training-card-dm@git+https://github.com/DanielCardona29/cells-training-card-dm.git":
   version "1.0.0-rc.1"
-  resolved "git+https://github.com/DanielCardona29/cells-training-card-dm.git#aee7e890f62bdbd0aa6a4ca5820f5e89e9a00083"
+  resolved "git+https://github.com/DanielCardona29/cells-training-card-dm.git#7605cccd472e0f1b788e71fc682deb1e32283114"
   dependencies:
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.4"
     "@bbva-web-components/bbva-foundations-styles" "^2.3.5"

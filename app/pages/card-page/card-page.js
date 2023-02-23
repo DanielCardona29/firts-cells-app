@@ -29,7 +29,7 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
     super.firstUpdated(changedProps);
 
     this._logoutModal = this.shadowRoot.querySelector('#logoutModal');
-
+    if (!this.cardId) this.navigate('dashboard');
 
     this._getSessionStoragedata();
     this.getCardDetail();
@@ -37,7 +37,6 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
 
 
   _getSessionStoragedata() {
-    if (this.cardId === undefined) this.cardId = window.sessionStorage.getItem('card_id');
     if (this.userName === undefined) this.userName = window.sessionStorage.getItem('user_name');
   }
 
@@ -49,7 +48,6 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
 
     this.subscribe('card_id', (id) => {
       this.cardId = id;
-      window.sessionStorage.setItem('card_id', this.cardId);
     });
 
     if (!this.userName) {
@@ -70,8 +68,6 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
   cardDetailResponseSuccess(event) {
     const { detail: { response } } = event;
     const data = JSON.parse(response);
-
-    console.log(data)
   }
 
   cardDetailResponseError(event) {
@@ -90,7 +86,7 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
     <cells-template-paper-drawer-panel mode="seamed">
       <div slot="app__header">
         <bbva-header-main icon-left-primary="coronita:on" accessibility-text-icon-left-primary="Cerrar Sesión"
-          @header-main-icon-left-primary-click=${() => this._logoutModal.open()}
+          @header-main-icon-left-primary-click=${()=> this._logoutModal.open()}
           icon-right-primary="coronita:help"
           accessibility-text-icon-right-primary="Ayuda"
           @header-main-icon-right-primary-click=${() => this.navigate('help')}
@@ -99,11 +95,11 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
       </div>
     
     
-      
+    
     
       <bbva-help-modal id="logoutModal" header-icon="coronita:info"
         header-text=${this.t('dashboard-page.logout-modal.header')}
-        button-text=${this.t('dashboard-page.logout-modal.button')} @help-modal-footer-button-click=${() =>
+        button-text=${this.t('dashboard-page.logout-modal.button')} @help-modal-footer-button-click=${()=>
         window.cells.logout()}>
         <div slot="slot-content">
           <span>${this.t('dashboard-page.logout-modal.slot')}</span>

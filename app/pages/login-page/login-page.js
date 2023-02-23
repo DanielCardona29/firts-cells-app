@@ -57,7 +57,7 @@ class LoginPage extends BbvaCoreIntlMixin(CellsPage) {
 
     const _tsec = this.shadowRoot.querySelector('#taining-dm');
 
-    // Inciamos los datos
+    // Inciamos los datos 
     // correct user '1234567890';
     // correct password '112233';
 

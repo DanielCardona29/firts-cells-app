@@ -50,7 +50,7 @@
     json5 "^2.2.2"
     semver "^6.3.0"
 
-"@babel/generator@^7.21.0", "@babel/generator@^7.4.0":
+"@babel/generator@^7.21.0", "@babel/generator@^7.21.1", "@babel/generator@^7.4.0":
   version "7.21.1"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/generator/-/generator-7.21.1.tgz#951cc626057bc0af2c35cd23e9c64d384dea83dd"
   integrity sha1-lRzGJgV7wK8sNc0j6cZNOE3qg90=
@@ -161,10 +161,10 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
-"@babel/helper-module-transforms@^7.18.6", "@babel/helper-module-transforms@^7.20.11", "@babel/helper-module-transforms@^7.21.0":
-  version "7.21.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-module-transforms/-/helper-module-transforms-7.21.0.tgz#89a8f86ad748870e3d024e470b2e8405e869db67"
-  integrity sha1-iaj4atdIhw49Ak5HCy6EBehp22c=
+"@babel/helper-module-transforms@^7.18.6", "@babel/helper-module-transforms@^7.20.11", "@babel/helper-module-transforms@^7.21.0", "@babel/helper-module-transforms@^7.21.2":
+  version "7.21.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/helper-module-transforms/-/helper-module-transforms-7.21.2.tgz#160caafa4978ac8c00ac66636cb0fa37b024e2d2"
+  integrity sha1-Fgyq+kl4rIwArGZjbLD6N7Ak4tI=
   dependencies:
     "@babel/helper-environment-visitor" "^7.18.9"
     "@babel/helper-module-imports" "^7.18.6"
@@ -172,8 +172,8 @@
     "@babel/helper-split-export-declaration" "^7.18.6"
     "@babel/helper-validator-identifier" "^7.19.1"
     "@babel/template" "^7.20.7"
-    "@babel/traverse" "^7.21.0"
-    "@babel/types" "^7.21.0"
+    "@babel/traverse" "^7.21.2"
+    "@babel/types" "^7.21.2"
 
 "@babel/helper-optimise-call-expression@^7.18.6":
   version "7.18.6"
@@ -273,10 +273,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.7", "@babel/parser@^7.21.0", "@babel/parser@^7.4.3":
-  version "7.21.1"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/parser/-/parser-7.21.1.tgz#a8f81ee2fe872af23faea4b17a08fcc869de7bcc"
-  integrity sha1-qPge4v6HKvI/rqSxegj8yGnee8w=
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.7", "@babel/parser@^7.21.0", "@babel/parser@^7.21.2", "@babel/parser@^7.4.3":
+  version "7.21.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/parser/-/parser-7.21.2.tgz#dacafadfc6d7654c3051a66d6fe55b6cb2f2a0b3"
+  integrity sha1-2sr638bXZUwwUaZtb+VbbLLyoLM=
 
 "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@^7.18.6":
   version "7.18.6"
@@ -675,11 +675,11 @@
     "@babel/helper-plugin-utils" "^7.20.2"
 
 "@babel/plugin-transform-modules-commonjs@^7.19.6":
-  version "7.20.11"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.20.11.tgz#8cb23010869bf7669fd4b3098598b6b2be6dc607"
-  integrity sha1-jLIwEIab92af1LMJhZi2sr5txgc=
+  version "7.21.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.21.2.tgz#6ff5070e71e3192ef2b7e39820a06fb78e3058e7"
+  integrity sha1-b/UHDnHjGS7yt+OYIKBvt44wWOc=
   dependencies:
-    "@babel/helper-module-transforms" "^7.20.11"
+    "@babel/helper-module-transforms" "^7.21.2"
     "@babel/helper-plugin-utils" "^7.20.2"
     "@babel/helper-simple-access" "^7.20.2"
 
@@ -925,26 +925,26 @@
     "@babel/parser" "^7.20.7"
     "@babel/types" "^7.20.7"
 
-"@babel/traverse@^7.20.5", "@babel/traverse@^7.20.7", "@babel/traverse@^7.21.0", "@babel/traverse@^7.4.3":
-  version "7.21.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/traverse/-/traverse-7.21.0.tgz#0e1807abd5db98e6a19c204b80ed1e3f5bca0edc"
-  integrity sha1-DhgHq9XbmOahnCBLgO0eP1vKDtw=
+"@babel/traverse@^7.20.5", "@babel/traverse@^7.20.7", "@babel/traverse@^7.21.0", "@babel/traverse@^7.21.2", "@babel/traverse@^7.4.3":
+  version "7.21.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/traverse/-/traverse-7.21.2.tgz#ac7e1f27658750892e815e60ae90f382a46d8e75"
+  integrity sha1-rH4fJ2WHUIkugV5grpDzgqRtjnU=
   dependencies:
     "@babel/code-frame" "^7.18.6"
-    "@babel/generator" "^7.21.0"
+    "@babel/generator" "^7.21.1"
     "@babel/helper-environment-visitor" "^7.18.9"
     "@babel/helper-function-name" "^7.21.0"
     "@babel/helper-hoist-variables" "^7.18.6"
     "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/parser" "^7.21.0"
-    "@babel/types" "^7.21.0"
+    "@babel/parser" "^7.21.2"
+    "@babel/types" "^7.21.2"
     debug "^4.1.0"
     globals "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.18.9", "@babel/types@^7.20.0", "@babel/types@^7.20.2", "@babel/types@^7.20.5", "@babel/types@^7.20.7", "@babel/types@^7.21.0", "@babel/types@^7.3.0", "@babel/types@^7.4.0", "@babel/types@^7.4.4":
-  version "7.21.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/types/-/types-7.21.0.tgz#1da00d89c2f18b226c9207d96edbeb79316a1819"
-  integrity sha1-HaANicLxiyJskgfZbtvreTFqGBk=
+"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.18.9", "@babel/types@^7.20.0", "@babel/types@^7.20.2", "@babel/types@^7.20.5", "@babel/types@^7.20.7", "@babel/types@^7.21.0", "@babel/types@^7.21.2", "@babel/types@^7.3.0", "@babel/types@^7.4.0", "@babel/types@^7.4.4":
+  version "7.21.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@babel/types/-/types-7.21.2.tgz#92246f6e00f91755893c2876ad653db70c8310d1"
+  integrity sha1-kiRvbgD5F1WJPCh2rWU9twyDENE=
   dependencies:
     "@babel/helper-string-parser" "^7.19.4"
     "@babel/helper-validator-identifier" "^7.19.1"
@@ -1106,10 +1106,10 @@
     "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
     lit-element "^2.0.0"
 
-"@bbva-web-components/bbva-clip-box@^4.0.0", "@bbva-web-components/bbva-clip-box@^4.9.0":
-  version "4.9.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-clip-box/-/@bbva-web-components/bbva-clip-box-4.9.0.tgz#b87d5381f784b0c3ad96debecb17f9787fca3760"
-  integrity sha1-uH1TgfeEsMOtlt6+yxf5eH/KN2A=
+"@bbva-web-components/bbva-clip-box@^4.9.1":
+  version "4.9.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-clip-box/-/@bbva-web-components/bbva-clip-box-4.9.1.tgz#da7d1dcd7d1aba44596e959c5e1f91f266b91d8a"
+  integrity sha1-2n0dzX0aukRZbpWcXh+R8ma5HYo=
   dependencies:
     "@bbva-web-components/bbva-component-configuration-mixin" "^1.0.0"
     "@bbva-web-components/bbva-core-intl-mixin" "^1.0.0"
@@ -1122,12 +1122,12 @@
     lit-element "^2.0.0"
     lit-html "^1.0.0"
 
-"@bbva-web-components/bbva-clip-card@^4.6.3":
-  version "4.6.3"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-clip-card/-/@bbva-web-components/bbva-clip-card-4.6.3.tgz#377c61a359ede5503dc916015b6a059d5f3084f7"
-  integrity sha1-N3xho1nt5VA9yRYBW2oFnV8whPc=
+"@bbva-web-components/bbva-clip-card@^4.6.4":
+  version "4.6.4"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-clip-card/-/@bbva-web-components/bbva-clip-card-4.6.4.tgz#331dbe4753323410f7a472976b27aaca070a44fa"
+  integrity sha1-Mx2+R1MyNBD3pHKXayeqygcKRPo=
   dependencies:
-    "@bbva-web-components/bbva-clip-box" "^4.9.0"
+    "@bbva-web-components/bbva-clip-box" "^4.9.1"
     "@bbva-web-components/bbva-component-configuration-mixin" "^1.4.1"
     "@bbva-web-components/bbva-core-intl-mixin" "^1.0.0"
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
@@ -1218,6 +1218,17 @@
     "@bbva-web-components/bbva-core-markdown-element" "^1.0.16"
     "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
     lit-element "^2.0.0"
+
+"@bbva-web-components/bbva-core-control@^2.0.0":
+  version "2.0.3"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-core-control/-/@bbva-web-components/bbva-core-control-2.0.3.tgz#fb1e53adbc1419fcd844cd7049e271fa66b040e6"
+  integrity sha1-+x5TrbwUGfzYRM1wSeJx+mawQOY=
+  dependencies:
+    "@bbva-web-components/bbva-core-focus-visible-mixin" "^1.0.19"
+    "@bbva-web-components/bbva-core-form-association-mixin" "^1.0.3"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.5.1"
+    lit-element "^2.0.0"
+    lit-html "^1.0.0"
 
 "@bbva-web-components/bbva-core-delegate-attributes-mixin@^1.1.9":
   version "1.1.9"
@@ -1312,7 +1323,7 @@
     "@bbva-web-components/bbva-core-lit-helpers" "^1.5.1"
     intl-messageformat "~8.0.0"
 
-"@bbva-web-components/bbva-core-lit-helpers@^1.0.0", "@bbva-web-components/bbva-core-lit-helpers@^1.0.4", "@bbva-web-components/bbva-core-lit-helpers@^1.5.1":
+"@bbva-web-components/bbva-core-lit-helpers@^1.0.0", "@bbva-web-components/bbva-core-lit-helpers@^1.0.4", "@bbva-web-components/bbva-core-lit-helpers@^1.2.0", "@bbva-web-components/bbva-core-lit-helpers@^1.5.1":
   version "1.5.1"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-core-lit-helpers/-/@bbva-web-components/bbva-core-lit-helpers-1.5.1.tgz#7397d321ec595a6048bc8dc9ceba01e91a2c34e6"
   integrity sha1-c5fTIexZWmBIvI3JzroB6RosNOY=
@@ -1381,6 +1392,15 @@
   dependencies:
     "@bbva-web-components/bbva-core-lit-helpers" "^1.5.1"
 
+"@bbva-web-components/bbva-core-spinner@^1.0.0":
+  version "1.0.12"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-core-spinner/-/@bbva-web-components/bbva-core-spinner-1.0.12.tgz#637e253a1a31bd2937db1c609847b71a74621095"
+  integrity sha1-Y34lOhoxvSk32xxgmEe3GnRiEJU=
+  dependencies:
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.5.1"
+    "@bbva-web-components/bbva-foundations-styles" "^2.3.5"
+    lit-element "^2.0.0"
+
 "@bbva-web-components/bbva-core-switch@^2.0.0":
   version "2.0.4"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-core-switch/-/@bbva-web-components/bbva-core-switch-2.0.4.tgz#3662d79196c48d3b7d5a8ca7a226accaeac461ba"
@@ -1421,10 +1441,10 @@
     "@bbva-web-components/bbva-core-meta" "^1.2.7"
     lit-element "^2.0.0"
 
-"@bbva-web-components/bbva-date@^4.6.8":
-  version "4.6.8"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-date/-/@bbva-web-components/bbva-date-4.6.8.tgz#14c2128cbdb27a69d01d76a79a10ba10bc19a069"
-  integrity sha1-FMISjL2yemnQHXanmhC6ELwZoGk=
+"@bbva-web-components/bbva-date@^4.6.9":
+  version "4.6.9"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-date/-/@bbva-web-components/bbva-date-4.6.9.tgz#1e3e4cb6c7b6bbff8c7129c5e366a038ef78657b"
+  integrity sha1-Hj5Mtse2u/+McSnF42agOO94ZXs=
   dependencies:
     "@bbva-web-components/bbva-component-configuration-mixin" "^1.4.1"
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
@@ -1517,11 +1537,11 @@
     lit-element "^2.0.0"
 
 "@bbva-web-components/bbva-foundations-categories@^1.0.0":
-  version "1.6.2"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-categories/-/@bbva-web-components/bbva-foundations-categories-1.6.2.tgz#32a8991d28e097c6783cff6da02acbdb8ab28e97"
-  integrity sha1-MqiZHSjgl8Z4PP9toCrL24qyjpc=
+  version "1.6.3"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-categories/-/@bbva-web-components/bbva-foundations-categories-1.6.3.tgz#b270b224c431a6922ce5673cfecc6bfa1176a568"
+  integrity sha1-snCyJMQxppIs5Wc8/sxr+hF2pWg=
   dependencies:
-    "@bbva-web-components/bbva-foundations-icons" "^1.17.0"
+    "@bbva-web-components/bbva-foundations-icons" "^1.18.0"
     "@bbva-web-components/bbva-foundations-styles" "^2.9.5"
 
 "@bbva-web-components/bbva-foundations-ellipsis@^1.0.0", "@bbva-web-components/bbva-foundations-ellipsis@^1.0.2":
@@ -1546,18 +1566,18 @@
   dependencies:
     lit-element "^2.0.0"
 
-"@bbva-web-components/bbva-foundations-icons@^1.0.0", "@bbva-web-components/bbva-foundations-icons@^1.17.0":
-  version "1.17.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-icons/-/@bbva-web-components/bbva-foundations-icons-1.17.0.tgz#8cbdd958dcc640cefbf53baaeb9fcc6a05c65d45"
-  integrity sha1-jL3ZWNzGQM779Tuq65/MagXGXUU=
+"@bbva-web-components/bbva-foundations-icons@^1.0.0", "@bbva-web-components/bbva-foundations-icons@^1.18.0":
+  version "1.18.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-icons/-/@bbva-web-components/bbva-foundations-icons-1.18.0.tgz#32f5755056471fb8e7716ab52bfc2cfe129dd732"
+  integrity sha1-MvV1UFZHH7jncWq1K/ws/hKd1zI=
   dependencies:
     "@bbva-web-components/bbva-core-iconset" "^1.0.0"
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
 
 "@bbva-web-components/bbva-foundations-microillustrations@^5.0.0":
-  version "5.9.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-microillustrations/-/@bbva-web-components/bbva-foundations-microillustrations-5.9.0.tgz#a00247ef6ff2098dba144f306945809efc857e3b"
-  integrity sha1-oAJH72/yCY26FE8waUWAnvyFfjs=
+  version "5.10.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-microillustrations/-/@bbva-web-components/bbva-foundations-microillustrations-5.10.0.tgz#97c853d058c2494596da2289bee22a6250bb1d34"
+  integrity sha1-l8hT0FjCSUWW2iKJvuIqYlC7HTQ=
   dependencies:
     lit-element "^2.0.0"
 
@@ -1576,7 +1596,15 @@
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-sass/-/@bbva-web-components/bbva-foundations-sass-1.3.2.tgz#579beaf6b92bbba644166231fc295e2bed4fec05"
   integrity sha1-V5vq9rkru6ZEFmIx/CleK+1P7AU=
 
-"@bbva-web-components/bbva-foundations-styles@^2.0.0", "@bbva-web-components/bbva-foundations-styles@^2.3.5", "@bbva-web-components/bbva-foundations-styles@^2.9.5":
+"@bbva-web-components/bbva-foundations-shapes@^1.0.0":
+  version "1.1.6"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-shapes/-/@bbva-web-components/bbva-foundations-shapes-1.1.6.tgz#fae458d67d4c9979ff2ea99b67acb5b7f9bbb3cb"
+  integrity sha1-+uRY1n1MmXn/LqmbZ6y1t/m7s8s=
+  dependencies:
+    "@bbva-web-components/bbva-foundations-styles" "^2.9.5"
+    lit-element "^2.0.0"
+
+"@bbva-web-components/bbva-foundations-styles@^2.0.0", "@bbva-web-components/bbva-foundations-styles@^2.3.5", "@bbva-web-components/bbva-foundations-styles@^2.4.1", "@bbva-web-components/bbva-foundations-styles@^2.9.5":
   version "2.9.5"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-foundations-styles/-/@bbva-web-components/bbva-foundations-styles-2.9.5.tgz#c3df2e48a0cff173e9e8ea6d9c8e6ba99bf9ff60"
   integrity sha1-w98uSKDP8XPp6OptnI5rqZv5/2A=
@@ -1612,9 +1640,9 @@
     lit-element "^2.0.0"
 
 "@bbva-web-components/bbva-header-category@^7.0.0":
-  version "7.29.8"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-header-category/-/@bbva-web-components/bbva-header-category-7.29.8.tgz#40d97f9224d21bf2b309e0b973fb3207cbb749cc"
-  integrity sha1-QNl/kiTSG/KzCeC5c/syB8u3Scw=
+  version "7.29.9"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-header-category/-/@bbva-web-components/bbva-header-category-7.29.9.tgz#22b71a932d945a8fc2221684ec67002199b76868"
+  integrity sha1-Ircaky2UWo/CIhaE7GcAIZm3aGg=
   dependencies:
     "@bbva-web-components/bbva-amount" "^9.21.1"
     "@bbva-web-components/bbva-badge-notification" "^5.0.4"
@@ -1624,7 +1652,7 @@
     "@bbva-web-components/bbva-core-heading" "^1.0.0"
     "@bbva-web-components/bbva-core-intl-mixin" "^1.0.0"
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
-    "@bbva-web-components/bbva-date" "^4.6.8"
+    "@bbva-web-components/bbva-date" "^4.6.9"
     "@bbva-web-components/bbva-disable-mixin" "^1.0.0"
     "@bbva-web-components/bbva-foundations-icons" "^1.0.0"
     "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
@@ -1652,9 +1680,9 @@
     lit-html "^1.0.0"
 
 "@bbva-web-components/bbva-help-modal@^4.0.0":
-  version "4.11.16"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-help-modal/-/@bbva-web-components/bbva-help-modal-4.11.16.tgz#a26491d8e19b8bac764c3706ef11a0cc9a772fa0"
-  integrity sha1-omSR2OGbi6x2TDcG7xGgzJp3L6A=
+  version "4.12.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-help-modal/-/@bbva-web-components/bbva-help-modal-4.12.0.tgz#d37b0721794510e3f23f483411831cc4ee2c1596"
+  integrity sha1-03sHIXlFEOPyP0g0EYMcxO4sFZY=
   dependencies:
     "@bbva-web-components/bbva-button-default" "^5.0.0"
     "@bbva-web-components/bbva-component-configuration-mixin" "^1.0.0"
@@ -1703,15 +1731,15 @@
     lit-html "^1.0.0"
 
 "@bbva-web-components/bbva-list-card@^7.0.0", "@bbva-web-components/bbva-list-card@^7.18.9":
-  version "7.18.9"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-list-card/-/@bbva-web-components/bbva-list-card-7.18.9.tgz#612b34441069b9cdf281ab5e1462697f100915cc"
-  integrity sha1-YSs0RBBpuc3ygateFGJpfxAJFcw=
+  version "7.18.10"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-list-card/-/@bbva-web-components/bbva-list-card-7.18.10.tgz#27ba906772930dddb2f997445a1d6b69eda2da9e"
+  integrity sha1-J7qQZ3KTDd2y+ZdEWh1rae2i2p4=
   dependencies:
     "@bbva-web-components/bbva-amount" "^9.21.1"
     "@bbva-web-components/bbva-badge-default" "^5.6.11"
     "@bbva-web-components/bbva-badge-variability" "^1.8.4"
     "@bbva-web-components/bbva-button-alert" "^2.6.4"
-    "@bbva-web-components/bbva-clip-card" "^4.6.3"
+    "@bbva-web-components/bbva-clip-card" "^4.6.4"
     "@bbva-web-components/bbva-clip-entities" "^3.24.3"
     "@bbva-web-components/bbva-component-configuration-mixin" "^1.4.1"
     "@bbva-web-components/bbva-core-amount-mixin" "^1.0.0"
@@ -1737,16 +1765,16 @@
     lit-element "^2.0.0"
 
 "@bbva-web-components/bbva-list-movement@^5.0.0":
-  version "5.19.16"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-list-movement/-/@bbva-web-components/bbva-list-movement-5.19.16.tgz#f7124461560be20cc1ca8b8caed684448e0fdb13"
-  integrity sha1-9xJEYVYL4gzByouMrtaERI4P2xM=
+  version "5.19.17"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-list-movement/-/@bbva-web-components/bbva-list-movement-5.19.17.tgz#2d58c8870960ec8ffa1e347d8be41c9fccd141ca"
+  integrity sha1-LVjIhwlg7I/6HjR9i+Qcn8zRQco=
   dependencies:
     "@bbva-web-components/bbva-amount" "^9.0.0"
     "@bbva-web-components/bbva-badge-default" "^5.0.0"
     "@bbva-web-components/bbva-badge-highlight" "^1.0.0"
     "@bbva-web-components/bbva-badge-icon" "^1.2.13"
     "@bbva-web-components/bbva-badge-variability" "^1.0.0"
-    "@bbva-web-components/bbva-clip-box" "^4.0.0"
+    "@bbva-web-components/bbva-clip-box" "^4.9.1"
     "@bbva-web-components/bbva-clip-entities" "^3.0.0"
     "@bbva-web-components/bbva-component-configuration-mixin" "^1.0.0"
     "@bbva-web-components/bbva-core-amount-mixin" "^1.0.0"
@@ -1830,6 +1858,61 @@
     lit-element "^2.0.0"
     lit-html "^1.0.0"
 
+"@bbva-web-components/bbva-web-amount@^1.4.1":
+  version "1.4.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-amount/-/@bbva-web-components/bbva-web-amount-1.4.1.tgz#684b03ddd26adb278d7d579aad17d31fa1e049f6"
+  integrity sha1-aEsD3dJq2yeNfVearRfTH6HgSfY=
+  dependencies:
+    "@bbva-web-components/bbva-core-amount-currency-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-amount-format-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    lit-element "^2.0.0"
+
+"@bbva-web-components/bbva-web-badge-default@^1.1.1":
+  version "1.1.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-badge-default/-/@bbva-web-components/bbva-web-badge-default-1.1.1.tgz#d6644562bd8b31d07dfa4362bfcc40abbffc48f1"
+  integrity sha1-1mRFYr2LMdB9+kNiv8xAq7/8SPE=
+  dependencies:
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    lit-element "^2.0.0"
+
+"@bbva-web-components/bbva-web-badge-variability@^1.2.1":
+  version "1.2.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-badge-variability/-/@bbva-web-components/bbva-web-badge-variability-1.2.1.tgz#be20526de01524f47fde2b4ebe77ee2f79338816"
+  integrity sha1-viBSbeAVJPR/3itOvnfuL3kziBY=
+  dependencies:
+    "@bbva-web-components/bbva-core-icon" "^1.0.0"
+    "@bbva-web-components/bbva-core-intl-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-icons" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    lit-element "^2.0.0"
+
+"@bbva-web-components/bbva-web-button-default@^1.0.0":
+  version "1.5.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-button-default/-/@bbva-web-components/bbva-web-button-default-1.5.0.tgz#59b3f5354c3e81c703c43782ff9ce8fde1126b04"
+  integrity sha1-WbP1NUw+gccDxDeC/5zo/eESawQ=
+  dependencies:
+    "@bbva-web-components/bbva-core-action" "^3.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    lit-element "^2.0.0"
+
+"@bbva-web-components/bbva-web-form-control@^1.2.2":
+  version "1.2.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-form-control/-/@bbva-web-components/bbva-web-form-control-1.2.2.tgz#c86e30923c67befa4b2d73b2cb8a988c6ed6859a"
+  integrity sha1-yG4wkjxnvvpLLXOyy4qYjG7WhZo=
+  dependencies:
+    "@bbva-web-components/bbva-core-control" "^2.0.0"
+    "@bbva-web-components/bbva-core-icon" "^1.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-icons" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    "@bbva-web-components/bbva-web-notification-help" "^1.2.3"
+    lit-element "^2.0.0"
+
 "@bbva-web-components/bbva-web-form-field@^1.5.1":
   version "1.5.1"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-form-field/-/@bbva-web-components/bbva-web-form-field-1.5.1.tgz#a5194883b9731ca186ee96c4056afd6bc0fef241"
@@ -1887,6 +1970,104 @@
     "@open-wc/lit-helpers" "^0.3.0"
     lit-element "^2.0.0"
 
+"@bbva-web-components/bbva-web-notification-help@^1.2.3":
+  version "1.2.3"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-notification-help/-/@bbva-web-components/bbva-web-notification-help-1.2.3.tgz#cd816634f0b4f555200979fba00f2c85f36b5fce"
+  integrity sha1-zYFmNPC09VUgCXn7oA8shfNrX84=
+  dependencies:
+    "@bbva-web-components/bbva-core-icon" "^1.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-icons" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    lit-element "^2.0.0"
+
+"@bbva-web-components/bbva-web-progress-bar@^1.1.3":
+  version "1.1.3"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-progress-bar/-/@bbva-web-components/bbva-web-progress-bar-1.1.3.tgz#d1b9fa9a0313d9abaf8438e6e010965bfb732e67"
+  integrity sha1-0bn6mgMT2auvhDjm4BCWW/tzLmc=
+  dependencies:
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.2.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.4.1"
+    lit-element "^2.0.0"
+
+"@bbva-web-components/bbva-web-table-body@^1.5.4":
+  version "1.5.4"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-table-body/-/@bbva-web-components/bbva-web-table-body-1.5.4.tgz#99cbcd3086bcd5b7933dba983667eeeee670d4ff"
+  integrity sha1-mcvNMIa81beTPbqYNmfu7uZw1P8=
+  dependencies:
+    "@bbva-web-components/bbva-core-amount-currency-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-amount-format-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-icon" "^1.0.0"
+    "@bbva-web-components/bbva-core-intl-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-core-slots-content-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-icons" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-shapes" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    "@bbva-web-components/bbva-web-amount" "^1.4.1"
+    "@bbva-web-components/bbva-web-badge-default" "^1.1.1"
+    "@bbva-web-components/bbva-web-badge-variability" "^1.2.1"
+    "@bbva-web-components/bbva-web-form-control" "^1.2.2"
+    "@bbva-web-components/bbva-web-link" "^1.6.1"
+    "@bbva-web-components/bbva-web-notification-help" "^1.2.3"
+    "@bbva-web-components/bbva-web-progress-bar" "^1.1.3"
+    lit-element "^2.0.0"
+    lit-html "^1.0.0"
+
+"@bbva-web-components/bbva-web-table-header@^1.1.8":
+  version "1.1.8"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-table-header/-/@bbva-web-components/bbva-web-table-header-1.1.8.tgz#e1db3d196b217656d3fa3553f8aa89a8aed5c257"
+  integrity sha1-4ds9GWshdlbT+jVT+KqJqK7Vwlc=
+  dependencies:
+    "@bbva-web-components/bbva-core-focus-visible-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-icon" "^1.0.0"
+    "@bbva-web-components/bbva-core-intl-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-icons" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    "@bbva-web-components/bbva-web-form-control" "^1.2.2"
+    lit-element "^2.0.0"
+    lit-html "^1.0.0"
+
+"@bbva-web-components/bbva-web-table-panel-info@^1.1.10":
+  version "1.1.10"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-table-panel-info/-/@bbva-web-components/bbva-web-table-panel-info-1.1.10.tgz#b07c117eefe1774467e038170e415e00c875ddbd"
+  integrity sha1-sHwRfu/hd0Rn4DgXDkFeAMh13b0=
+  dependencies:
+    "@bbva-web-components/bbva-core-heading" "^1.0.0"
+    "@bbva-web-components/bbva-core-icon" "^1.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-core-spinner" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-microillustrations" "^5.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    "@bbva-web-components/bbva-web-button-default" "^1.0.0"
+    "@bbva-web-components/bbva-web-link" "^1.6.1"
+    lit-element "^2.0.0"
+    lit-html "^1.0.0"
+
+"@bbva-web-components/bbva-web-table-row-group@^1.1.7":
+  version "1.1.7"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-table-row-group/-/@bbva-web-components/bbva-web-table-row-group-1.1.7.tgz#274efb0d96c2f752180f3c2e5c45f7b00c5a6164"
+  integrity sha1-J077DZbC91IYDzwuXEX3sAxaYWQ=
+  dependencies:
+    "@bbva-web-components/bbva-core-amount-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-core-heading" "^1.0.0"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-core-slots-content-mixin" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    "@bbva-web-components/bbva-web-amount" "^1.4.1"
+    lit-element "^2.0.0"
+    lit-html "^1.0.0"
+
+"@bbva-web-components/bbva-web-table@^1.1.4":
+  version "1.1.4"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-web-table/-/@bbva-web-components/bbva-web-table-1.1.4.tgz#6b6df6625d19f80cc8b4a4b326f5b195f452b712"
+  integrity sha1-a232Yl0Z+AzItKSzJvWxlfRStxI=
+  dependencies:
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.0"
+    "@bbva-web-components/bbva-foundations-styles" "^2.0.0"
+    lit-element "^2.0.0"
+
 "@bbva-web-components/bbva-widget-defaults-mixin@^2.0.0":
   version "2.7.5"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@bbva-web-components/bbva-widget-defaults-mixin/-/@bbva-web-components/bbva-widget-defaults-mixin-2.7.5.tgz#3856e316a4c5cf3283d40a87fa31da33511080df"
@@ -1918,30 +2099,30 @@
     lit-element "^2.0.0"
 
 "@cells-components/bgadp-accounts-v0@^4.41.0":
-  version "4.41.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-accounts-v0/-/@cells-components/bgadp-accounts-v0-4.41.0.tgz#0cd06077852b89e716262ac0f0fe3537af6ae205"
-  integrity sha1-DNBgd4UriecWJirA8P41N69q4gU=
+  version "4.42.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-accounts-v0/-/@cells-components/bgadp-accounts-v0-4.42.0.tgz#c4c0425b318a87228d7271bdde3be0255faddf99"
+  integrity sha1-xMBCWzGKhyKNcnG93jvgJV+t35k=
   dependencies:
     "@cells/bgadp-sources-common" "1.18.0"
 
 "@cells-components/bgadp-cards-v0@^4.0.0", "@cells-components/bgadp-cards-v0@^4.40.0":
-  version "4.41.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-cards-v0/-/@cells-components/bgadp-cards-v0-4.41.0.tgz#7502908618089b381e6650525b4496dce5fec6bc"
-  integrity sha1-dQKQhhgImzgeZlBSW0SW3OX+xrw=
+  version "4.42.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-cards-v0/-/@cells-components/bgadp-cards-v0-4.42.0.tgz#4cf0b30231400c39872bca0e0f3c446b603fcba4"
+  integrity sha1-TPCzAjFADDmHK8oODzxEa2A/y6Q=
   dependencies:
     "@cells/bgadp-sources-common" "1.18.0"
 
 "@cells-components/bgadp-cards-v1@^4.0.0":
-  version "4.41.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-cards-v1/-/@cells-components/bgadp-cards-v1-4.41.0.tgz#b3c5ea4e67bc4d85c513e000e9093e437167b56e"
-  integrity sha1-s8XqTme8TYXFE+AA6Qk+Q3FntW4=
+  version "4.42.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-cards-v1/-/@cells-components/bgadp-cards-v1-4.42.0.tgz#4d0aa78c887e986df5e69a9f410eab8567efcfc0"
+  integrity sha1-TQqnjIh+mG315pqfQQ6rhWfvz8A=
   dependencies:
     "@cells/bgadp-sources-common" "1.18.0"
 
 "@cells-components/bgadp-granting-tickets-v0@^4.40.0":
-  version "4.41.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-granting-tickets-v0/-/@cells-components/bgadp-granting-tickets-v0-4.41.0.tgz#7131c095e80ed6f8bf81172fddef03eda1f9e25e"
-  integrity sha1-cTHAlegO1vi/gRcv3e8D7aH54l4=
+  version "4.42.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@cells-components/bgadp-granting-tickets-v0/-/@cells-components/bgadp-granting-tickets-v0-4.42.0.tgz#37f4de9cd22b57a7fadaba61051b129c7a602c74"
+  integrity sha1-N/TenNIrV6f62rphBRsSnHpgLHQ=
   dependencies:
     "@cells/bgadp-sources-common" "1.18.0"
 
@@ -2515,20 +2696,35 @@
 
 "@training/cells-training-cards-panel-ui@git+https://github.com/DanielCardona29/cells-training-cards-panel-ui.git#master":
   version "1.0.0-rc.1"
-  resolved "git+https://github.com/DanielCardona29/cells-training-cards-panel-ui.git#c1fbcf07b817abf4a393b3e3dd650e6b9e46ad42"
+  resolved "git+https://github.com/DanielCardona29/cells-training-cards-panel-ui.git#928f96b99fa7b9e78995feed064c9ba158d0c494"
   dependencies:
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.4"
     "@bbva-web-components/bbva-foundations-styles" "^2.3.5"
     "@bbva-web-components/bbva-list-card" "^7.18.9"
     lit-element "^2.0.0"
 
-"@training/training-account-dm@git+https://github.com/DanielCardona29/training-account-dm.git":
+"@training/training-account-dm@git+https://github.com/DanielCardona29/training-account-dm.git", "@training/training-account-dm@git+https://github.com/DanielCardona29/training-account-dm.git#master":
   version "1.0.0-rc.1"
-  resolved "git+https://github.com/DanielCardona29/training-account-dm.git#ec289850a4b15f4e0f22c14ef85fd0967d9c03a5"
+  resolved "git+https://github.com/DanielCardona29/training-account-dm.git#4508f16a281c33a0810c186ad88d3bfbab29fbfb"
   dependencies:
     "@bbva-web-components/bbva-core-lit-helpers" "^1.0.4"
     "@bbva-web-components/bbva-foundations-styles" "^2.3.5"
     "@cells-components/bgadp-accounts-v0" "^4.41.0"
+    lit-element "^2.0.0"
+
+"@training/training-panel-accounts-ui@https://github.com/DanielCardona29/tables.git#master":
+  version "1.0.0-rc.1"
+  resolved "https://github.com/DanielCardona29/tables.git#44dc55a27faa2023c62ae97bff5b9bbbaf224fda"
+  dependencies:
+    "@bbva-web-components/bbva-core-collapse" "^1.1.9"
+    "@bbva-web-components/bbva-core-lit-helpers" "^1.0.4"
+    "@bbva-web-components/bbva-foundations-styles" "^2.3.5"
+    "@bbva-web-components/bbva-web-table" "^1.1.4"
+    "@bbva-web-components/bbva-web-table-body" "^1.5.4"
+    "@bbva-web-components/bbva-web-table-header" "^1.1.8"
+    "@bbva-web-components/bbva-web-table-panel-info" "^1.1.10"
+    "@bbva-web-components/bbva-web-table-row-group" "^1.1.7"
+    "@training/training-account-dm" "git+https://github.com/DanielCardona29/training-account-dm.git#master"
     lit-element "^2.0.0"
 
 "@types/accepts@*":
@@ -2853,9 +3049,9 @@
   integrity sha1-MV1XDMtWxTRS/4Y4c432BybVtuo=
 
 "@types/node@*":
-  version "18.14.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@types/node/-/node-18.14.0.tgz#94c47b9217bbac49d4a67a967fdcdeed89ebb7d0"
-  integrity sha1-lMR7khe7rEnUpnqWf9ze7Ynrt9A=
+  version "18.14.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@types/node/-/node-18.14.1.tgz#90dad8476f1e42797c49d6f8b69aaf9f876fc69f"
+  integrity sha1-kNrYR28eQnl8Sdb4tpqvn4dvxp8=
 
 "@types/node@^11.13.0":
   version "11.15.54"
@@ -2897,9 +3093,9 @@
     "@types/node" "*"
 
 "@types/serve-static@*":
-  version "1.15.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@types/serve-static/-/serve-static-1.15.0.tgz#c7930ff61afb334e121a9da780aac0d9b8f34155"
-  integrity sha1-x5MP9hr7M04SGp2ngKrA2bjzQVU=
+  version "1.15.1"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/@types/serve-static/-/serve-static-1.15.1.tgz#86b1753f0be4f9a1bee68d459fcda5be4ea52b5d"
+  integrity sha1-hrF1Pwvk+aG+5o1Fn82lvk6lK10=
   dependencies:
     "@types/mime" "*"
     "@types/node" "*"
@@ -3597,9 +3793,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001033, caniuse-lite@^1.0.30001449:
-  version "1.0.30001457"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/caniuse-lite/-/caniuse-lite-1.0.30001457.tgz#6af34bb5d720074e2099432aa522c21555a18301"
-  integrity sha1-avNLtdcgB04gmUMqpSLCFVWhgwE=
+  version "1.0.30001458"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/caniuse-lite/-/caniuse-lite-1.0.30001458.tgz#871e35866b4654a7d25eccca86864f411825540c"
+  integrity sha1-hx41hmtGVKfSXszKhoZPQRglVAw=
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -4239,9 +4435,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.4.284, electron-to-chromium@^1.4.67:
-  version "1.4.305"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/electron-to-chromium/-/electron-to-chromium-1.4.305.tgz#e4dfe3e06ab783f33171f9bde9e8ed092510fcd0"
-  integrity sha1-5N/j4Gq3g/Mxcfm96ejtCSUQ/NA=
+  version "1.4.311"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/electron-to-chromium/-/electron-to-chromium-1.4.311.tgz#953bc9a4767f5ce8ec125f9a1ad8e00e8f67e479"
+  integrity sha1-lTvJpHZ/XOjsEl+aGtjgDo9n5Hk=
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -4510,9 +4706,9 @@ es-module-lexer@^0.3.13:
   integrity sha1-e1BwROl9WwOwHUOSx0/+ucF3qDs=
 
 es-module-lexer@^1.0.0:
-  version "1.1.1"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/es-module-lexer/-/es-module-lexer-1.1.1.tgz#d4fed363dcd94bf12586266f7b80bbee6d80ce6e"
-  integrity sha1-1P7TY9zZS/ElhiZve4C77m2Azm4=
+  version "1.2.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/es-module-lexer/-/es-module-lexer-1.2.0.tgz#812264973b613195ba214f69a84e05b0f4241a67"
+  integrity sha1-gSJklzthMZW6IU9pqE4FsPQkGmc=
 
 es-module-shims@^0.4.6:
   version "0.4.7"
@@ -6014,7 +6210,7 @@ json-stringify-safe@~5.0.1:
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json5@^1.0.1:
+json5@^1.0.2:
   version "1.0.2"
   resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/json5/-/json5-1.0.2.tgz#63d98d60f21b313b77c4d6da18bfa69d80e1d593"
   integrity sha1-Y9mNYPIbMTt3xNbaGL+mnYDh1ZM=
@@ -7309,9 +7505,9 @@ read-pkg@^3.0.0:
     path-type "^3.0.0"
 
 readable-stream@^2.2.2:
-  version "2.3.7"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/readable-stream/-/readable-stream-2.3.7.tgz#1eca1cf711aef814c04f62252a36a62f6cb23b57"
-  integrity sha1-Hsoc9xGu+BTAT2IlKjamL2yyO1c=
+  version "2.3.8"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/readable-stream/-/readable-stream-2.3.8.tgz#91125e8042bba1b9887f49345f6277027ce8be9b"
+  integrity sha1-kRJegEK7obmIf0k0X2J3Anzovps=
   dependencies:
     core-util-is "~1.0.0"
     inherits "~2.0.3"
@@ -8039,9 +8235,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha1-btpL00SjyUrqN21MwxvHcxEDngk=
 
 systemjs@^6.3.1, systemjs@^6.8.3:
-  version "6.13.0"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/systemjs/-/systemjs-6.13.0.tgz#7b28e74b44352e1650e8652499f42de724c3fc7f"
-  integrity sha1-eyjnS0Q1LhZQ6GUkmfQt5yTD/H8=
+  version "6.14.0"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/systemjs/-/systemjs-6.14.0.tgz#0b6665de005b49624e94a2a5b5b936231e3cf97e"
+  integrity sha1-C2Zl3gBbSWJOlKKltbk2Ix48+X4=
 
 table-layout@^1.0.2:
   version "1.0.2"
@@ -8186,12 +8382,12 @@ trough@^1.0.0:
   integrity sha1-uLY5zvrX0LsqvTfUM/+Ck++l9AY=
 
 tsconfig-paths@^3.14.1:
-  version "3.14.1"
-  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/tsconfig-paths/-/tsconfig-paths-3.14.1.tgz#ba0734599e8ea36c862798e920bcf163277b137a"
-  integrity sha1-ugc0WZ6Oo2yGJ5jpILzxYyd7E3o=
+  version "3.14.2"
+  resolved "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/tsconfig-paths/-/tsconfig-paths-3.14.2.tgz#6e32f1f79412decd261f92d633a9dc1cfa99f088"
+  integrity sha1-bjLx95QS3s0mH5LWM6ncHPqZ8Ig=
   dependencies:
     "@types/json5" "^0.0.29"
-    json5 "^1.0.1"
+    json5 "^1.0.2"
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 

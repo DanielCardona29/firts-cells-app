@@ -68,6 +68,7 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
   cardDetailResponseSuccess(event) {
     const { detail: { response } } = event;
     const data = JSON.parse(response);
+    console.log(data)
   }
 
   cardDetailResponseError(event) {

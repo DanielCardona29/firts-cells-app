@@ -10,6 +10,7 @@ import '@training/cells-training-card-dm/cells-training-card-dm.js';
 import '@training/cells-training-cards-panel-ui/cells-training-cards-panel-ui';
 
 import '@training/training-account-dm/training-account-dm';
+import '@training/training-panel-accounts-ui/training-panel-accounts-ui';
 
 import styles from './dashboard-page-styles.js';
 
@@ -85,19 +86,6 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     if (response.statusText === 'OK') {
       const queryResponse = JSON.parse(response.response);
       queryResponse.data = queryResponse.data.map((card) => {
-
-        let status = '';
-        switch (card.status.id) {
-          case 'BLOCKED':
-            status = 'blocked'
-            break;
-          case 'INOPERATIVE':
-            status = 'off'
-            break;
-          default:
-            status = ''
-            break;
-        }
         return {
           brand: card.brandAssociation.name,
           cardId: card.cardId,
@@ -105,11 +93,12 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
           currentBalance: card.availableBalance.currentBalances[0],
           name: card.alias,
           padingBalance: card.availableBalance.pendingBalances[0],
-          status
+          status: card.status.id
         }
       })
 
       this.cardsList = queryResponse;
+      console.log(this.cardsList)
     } else {
       this.cardsList = {
         data: [],
@@ -144,7 +133,6 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     });
 
     this.accountsList = mapData;
-    console.log(this.accountsList)
   }
 
   cardClick(event) {
@@ -175,13 +163,30 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
     
     
       <div slot="app__main" class="container">
-        <div class="aling-center">
-          <h4>Tarjetas de credito</h4>
-          <div class="card-wrapper">
-            <cells-training-cards-panel-ui .isLoading=${this.isLoadingCards} .cardsList=${this.cardsList.data}
-              @card-click=${this.cardClick}>
-            </cells-training-cards-panel-ui>
+    
+        <div class="panel-wrapper">
+    
+        <div class=" aling-center accounst-panel">
+            <h4>Cuentas</h4>
+            ${
+              this.accountsList.length > 0
+              ?html`<div class="accounts-wrapper"><training-panel-accounts-ui .data=${this.accountsList}></training-panel-accounts-ui></div>`
+              :html`<cells-skeleton-loading-page visible class="skeleton"></cells-skeleton-loading-page>`
+            }
           </div>
+
+
+          <div class="aling-center cards-panel">
+            <h4>Tarjetas de credito</h4>
+            <div class="card-wrapper">
+              <cells-training-cards-panel-ui .isLoading=${this.isLoadingCards} .cardsList=${this.cardsList.data}
+                @card-click=${this.cardClick}>
+              </cells-training-cards-panel-ui>
+            </div>
+          </div>
+    
+    
+
         </div>
     
     

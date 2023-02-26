@@ -60,7 +60,7 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
   }
 
   getCardDetail() {
-
+    console.log(this.cardId)
     const _dataManager = this.shadowRoot.querySelector('#dm-cards');
     _dataManager.gerCardDetail(this.cardId);
   }
@@ -73,6 +73,7 @@ class CardPage extends BbvaCoreIntlMixin(CellsPage) {
 
   cardDetailResponseError(event) {
 
+    console.log(event)
   }
 
 

@@ -98,7 +98,6 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
       })
 
       this.cardsList = queryResponse;
-      console.log(this.cardsList)
     } else {
       this.cardsList = {
         data: [],
@@ -136,7 +135,7 @@ class DashboardPage extends BbvaCoreIntlMixin(CellsPage) {
   }
 
   cardClick(event) {
-    this.publish('card_id', event);
+    this.publish('card_id', event.detail);
     this.navigate('card');
   }
 
